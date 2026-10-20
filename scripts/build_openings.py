@@ -102,8 +102,9 @@ def line_key(line: str) -> str:
 def wikipedia(lines: set[tuple[str, str]]) -> dict[tuple[str, str], list[tuple[str, str]]]:
     """Each of the given (city, line)s in Wikipedia's list, with its (since, GoA)s in order.
 
-    A line is matched automatically if its city is in the system's name
-    and its name is the same up to line_key; wikipedia_lines.csv gives the rest.
+    A line is matched automatically if its city is the longest one in the system's name
+    and its name is the same up to line_key, and not blank;
+    wikipedia_lines.csv gives the rest.
     """
     mapped = defaultdict(list)
     for r in read(CURATION / "wikipedia_lines.csv"):
@@ -124,12 +125,13 @@ def wikipedia(lines: set[tuple[str, str]]) -> dict[tuple[str, str], list[tuple[s
             used.add(key)
             targets = mapped[key]
         else:
+            # "Navi Mumbai Metro" is in Navi Mumbai, not Mumbai.
+            city = max((c for c in by_city if c in w["system"]), key=len, default="")
+            name = line_key(w["line"])
             targets = [
                 (city, line)
-                for city in by_city
-                if city in w["system"]
-                for line in by_city[city]
-                if line_key(line) == line_key(w["line"])
+                for line in (by_city[city] if city and name else [])
+                if line_key(line) == name
             ]
         for t in targets:
             out[t].append((w["since"], w["GoA"]))
