@@ -218,6 +218,11 @@ Re-parsing UrbanRail.net keeps each event's ID,
 so the reviews in [`data/curation/events.csv`](data/curation/events.csv) still apply;
 new events need reviewing and adding there.
 
+CI reruns every step but `download_urbanrail.sh` on each push and pull request
+and fails if any output differs from what's committed.
+It also runs `ruff`, `ty`, `pyrefly`, and `shellcheck`,
+which `uv run pre-commit install` sets up to run before each commit, too.
+
 ## License
 
 The code in [`scripts/`](scripts/) is under the [MIT License](LICENSE).

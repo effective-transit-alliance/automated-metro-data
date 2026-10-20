@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v10.0.1
+        with:
+          enable-cache: true
+
+      - name: uv lock
+        run: uv lock --check
+
+      - name: ruff format
+        run: uv run ruff format --check
+
+      - name: ruff check
+        run: uv run ruff check
+
+      - name: ty
+        run: uv run ty check
+
+      - name: pyrefly
+        run: uv run pyrefly check
+
+      - name: shellcheck
+        run: uv run shellcheck scripts/*.sh
+
+      # `extract_camet_text.sh` needs `pdftotext` and `rg`.
+      - name: install poppler and ripgrep
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils ripgrep
+
+      # The CAMET reports are about 30 MB and their servers are slow,
+      # so only download them when the cache doesn't have this set of them.
+      - uses: actions/cache@v6
+        with:
+          path: data/raw/camet
+          key: camet-${{ hashFiles('data/camet_sha256sums.txt') }}
+
+      # The reports are pinned by hash, with archived copies to fall back on,
+      # so this doesn't depend on CAMET's servers being up.
+      - name: download the CAMET reports
+        run: ./scripts/download_camet.sh
+
+      # Rebuild everything from the committed sources and curation files,
+      # and fail if any output differs from what's committed.
+      # The UrbanRail.net pages aren't re-downloaded,
+      # since new openings there need reviewing in `data/curation/events.csv` first.
+      - name: rebuild
+        run: |
+          uv run python scripts/parse_urbanrail.py data/urbanrail_events.csv data/raw/urbanrail/*.htm
+          uv run python scripts/parse_camet.py data/camet_new_lines.csv data/raw/camet/camet-*.pdf
+          ./scripts/extract_camet_text.sh
+          uv run python scripts/build_openings.py
+          uv run python scripts/plot_share.py
+
+      - name: check the rebuild matches what's committed
+        run: |
+          git status --short
+          git diff --exit-code
+          test -z "$(git status --porcelain)"
