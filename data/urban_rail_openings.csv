@@ -169,6 +169,7 @@ opening_date,country,city,line,mode,km,mainline,grade_separated,new_build,GoA,au
 2017-06-10,Iran,Tehran,Line 7,metro,22.0,no,yes,yes,GoA2,no,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems,Line 7 Meydan-e San'at- Basij (22 km - 7 stations),,0e997c23
 2017-06-13,China,Zhuhai,Zhuhai Tram Line 1,tram,8.9,no,no,yes,GoA0,no,mode default; unverified,,Shangchong - Haitian Garden (8.9 km ),,1192c47d
 2017-06-17,India,Kochi,Line 1,metro,13.0,no,yes,yes,GoA2,no,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems,Line 1 Aluva – Palarivattom (13 km),,8bf224f3
+2017-06-17,Turkey,İzmit,Akçaray,tram,7.2,no,no,yes,GoA0,no,mode default; unverified,,Akçaray SekaPark - Otogar (7.2 km),,0de9e8b3
 2017-06-18,India,Bengaluru,Green Line,metro,10.5,no,yes,no,GoA2,no,mode default; unverified,,Green Line Sampige Road - Yelachenahalli (10.5 km),,b49bbce0
 2017-06-18,Singapore,Singapore,East–West Line,metro,7.5,no,yes,no,GoA2,no,ATO with train captains,,EW Line Joo Koon - Tuas Link (7.5 km),,82f5a3c3
 2017-06-27,China,Shijiazhuang,Line 1,metro,23.9,no,yes,yes,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 1 Xiwang - Xiaohedadao (23.9 km),,3347fd79

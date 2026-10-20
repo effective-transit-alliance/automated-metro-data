@@ -84,7 +84,9 @@ def parse(path: str) -> Iterator[dict[str, str]]:
             continue
         opened = datetime(int(year), month, int(day)).date()
         parts = href.split("/")
-        city, _, desc = rest.partition(" -- ")
+        # Some entries leave out the space after the second "--", as in "Dakar --[TER]".
+        city, _, desc = rest.partition(" --")
+        desc = desc.strip()
         desc = re.sub(r">\s*More info at", " ", desc)
         desc = re.split(r"\.{3,}|All dates shown|More openings in", desc)[0].strip()
         for seg, flag in segments(desc):
