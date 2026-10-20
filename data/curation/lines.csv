@@ -26,8 +26,6 @@ Guangzhou,Guangzhou East Ring Intercity,intercity rail,yes,yes,GoA1,mainline int
 Guangzhou,Guangzhou–Foshan Circular Intercity (Foshan West–Dongguan West),intercity rail,yes,yes,GoA1,mainline intercity,
 Guangzhou,Guangzhou–Qingyuan Intercity,intercity rail,yes,yes,GoA1,mainline intercity,
 Guangzhou,Guangzhou–Shenzhen Intercity,intercity rail,yes,yes,GoA1,mainline intercity,
-Guangzhou,Huangpu Tram Line 1,,,,,,
-Guangzhou,Huangpu Tram Line 2,,,,,,
 Shenzhen,Line 20,,,,GoA4,CAMET: FAO (2021 table),
 Shenzhen,Line 14,,,,GoA4,CAMET: FAO (2022 table),
 Shenzhen,Line 12,,,,GoA4,CAMET: FAO (2022 table),
@@ -107,19 +105,13 @@ Xiamen,Line 6,,,,GoA4,news reports at opening: GoA4 fully automatic operation,ht
 Ningbo,Line 12,suburban railway (railway standards),yes,,GoA2,no fully automatic operation reported at opening; not yet in a CAMET table,
 Nanjing,Line 6,,,,GoA2,no fully automatic operation reported at opening; not yet in a CAMET table,https://www.yzwb.net/news/jiangsu/nanjing/202609/t20260929_398318.html
 Hong Kong,South Island Line,,,,GoA4,MTR: UTO,https://hk.on.cc/hk/bkn/cnt/news/20161225/bkn-20161225000144265-1225_00822_001.html
-Hong Kong,Kwun Tong Line,,,,GoA2,,
 Hong Kong,Tuen Ma Line,metro,no,yes,GoA2,,
 Hong Kong,East Rail line,commuter rail,no,yes,GoA2,,
 Macau,Taipa Line,light metro,,,GoA4,UTO,https://macauhub.com.mo/2019/12/10/pt-linha-da-taipa-do-metro-ligeiro-de-macau-entra-em-funcionamento/
 Macau,Seac Pai Van Line,light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Macau,Hengqin Line,light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Taipei,Circular Line,,,,GoA4,driverless medium-capacity line,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Taipei,Sanying Line,,,,GoA4,driverless medium-capacity line,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Taipei,Red Line,,,,GoA2,,
-Taichung,Green Line,,,,GoA4,driverless,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Taoyuan,Airport MRT,airport express metro,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Taoyuan,Line A,airport express metro,,,GoA2,,
-Kaohsiung,Red Line,,,,GoA2,,
 New Taipei,Danhai LRT,light rail,,no,GoA1,,
 Taipei,Ankeng Line,light rail,,no,GoA1,,
 Incheon,Incheon Airport Maglev,maglev,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
@@ -127,7 +119,6 @@ Incheon,Line 2,light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driv
 Seoul,Ui LRT,light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Gimpo,Gimpo Gold Line,light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Seoul,Sillim Line,light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Seoul,Shinbundang Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Uijeongbu,Uijeongbu LRT,light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Seoul,GTX-A,regional express rail,no,yes,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Seoul,Gyeonggang Line,commuter rail,yes,yes,GoA1,,
@@ -138,15 +129,9 @@ Seoul,Line 1,commuter rail,yes,yes,GoA1,,
 Incheon,Suin Line,commuter rail,yes,yes,GoA1,,
 Busan,Donghae Nambu Line,commuter rail,yes,yes,GoA1,,
 Incheon,AREX,airport railway,no,yes,GoA2,,
-Singapore,Thomson–East Coast Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Singapore,Downtown Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Singapore,North East Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Singapore,Circle Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Singapore,Punggol LRT,light metro (APM),,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Singapore,North–South Line,,,,GoA3,"GoA3: driverless CBTC operation since 2017, with automatic door closing and a train captain on board",https://landtransportguru.net/things-to-note-about-the-new-cbtc-signalling-system/
 Singapore,East–West Line,,,,GoA3,"GoA3: driverless CBTC operation since 2017, with automatic door closing and a train captain on board",https://landtransportguru.net/things-to-note-about-the-new-cbtc-signalling-system/
-Kuala Lumpur,Line 9,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Kuala Lumpur,Putrajaya Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Kuala Lumpur,Shah Alam Line (Line 11),light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Kuala Lumpur,Kelana Jaya Line,light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Kuala Lumpur,Ampang Line,light metro,,,GoA2,,https://www.railjournal.com/signalling/thales-to-supply-cbtc-for-kls-ampang-line/
@@ -155,56 +140,27 @@ Kuala Lumpur,KTM Skypark Link,airport rail link,yes,yes,GoA1,,
 Bangkok,Gold Line,people mover,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Bangkok,Pink Line,monorail,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Bangkok,Yellow Line,monorail,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Bangkok,Purple Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Bangkok,Blue Line,,,,GoA2,,
-Bangkok,BTS Sukhumvit Line,,,,GoA2,,
 Bangkok,SRT Dark Red Line,commuter rail,yes,yes,GoA1,,
 Bangkok,SRT Light Red Line,commuter rail,yes,yes,GoA1,,
 Jakarta,Jabodebek LRT,light metro,,,GoA3,driverless with an attendant on board,https://finance.detik.com/infrastruktur/d-4642175/pakai-teknologi-jerman-lrt-jabodebek-bisa-jalan-tanpa-masinis
 Jakarta,Jakarta LRT Line 1,light rail,,yes,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Jakarta,MRT North–South Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Palembang,Palembang LRT,light rail,,yes,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Manila,Line 1,light rail,,yes,GoA2,,
-Manila,Line 2,,,,GoA2,,
 Sydney,Sydney Metro North West,,,,GoA4,UTO,https://www.abc.net.au/news/2019-05-26/sydney-metro-driverless-train-opens-but-delays-occur/11150794
 Sydney,M1,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Copenhagen,M3,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Copenhagen,M4,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Milan,M4,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Thessaloniki,Line 1,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Thessaloniki,Line 2,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Rennes,Line B,light metro,,,GoA4,UTO (Cityval),https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Paris,M14,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Paris,M4,,,,GoA4,converted to UTO in 2022,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Lyon,Line B,,,,GoA4,converted to UTO in 2022,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Barcelona,Line 9 Sud,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Barcelona,Line 10 Sud,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Barcelona,Line 10,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Turin,M1,light metro (VAL),,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Rome,Line C,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Nuremberg,U3,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Istanbul,M5,,,,GoA4,UTO,http://www.metro-report.com/news/single-view/view/erdogan-opens-first-driverless-metro-line-in-istanbul.html
-Istanbul,M7,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Istanbul,M8,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Istanbul,M9,,,,GoA4,UTO,https://en.wikipedia.org/wiki/M9_(Istanbul_Metro)
 Istanbul,M11,airport express metro,,,GoA4,UTO,https://railturkey.org/2023/01/18/istanbul-airport-metro-opens/
-Riyadh,Blue Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Riyadh,Red Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Riyadh,Orange Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Riyadh,Yellow Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Riyadh,Green Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Riyadh,Purple Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Doha,Red Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Doha,Gold Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Doha,Green Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Dubai,Red Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Honolulu,Skyline,,,,GoA4,UTO,https://www.railwayage.com/passenger/rapid-transit/skyline-opens-in-honolulu/
 Montreal,REM,light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Vancouver,Millennium Line Evergreen Extension,light metro,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Vancouver,Canada Line,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Santiago,Line 6,,,,GoA4,UTO,https://www.thalesgroup.com/en/worldwide/transportation/press-release/santiago-de-chile-brings-new-reality-urban-mobility-thales
 Santiago,Line 3,,,,GoA4,UTO,https://www.thalesgroup.com/en/worldwide/transportation/press-release/santiago-de-chile-brings-new-reality-urban-mobility-thales
-Lima,Line 2,,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 São Paulo,Line 4,,,,GoA4,UTO,http://www.viaquatro.com.br/imprensa/noticias/viaquatro-foi-vencedor-do-premio-uitp-latino?releaseid=25915
 São Paulo,Line 15,monorail,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 São Paulo,Line 17,monorail,,,GoA4,UTO,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
@@ -230,7 +186,6 @@ London,Elizabeth Line,commuter rail (cross-city),yes,yes,GoA2,,
 Geneva,Léman Express (CEVA),commuter rail,yes,yes,GoA1,,
 Dakar,TER Dakar,commuter rail,yes,no,GoA1,,
 Lagos,Red Line,commuter rail,no,yes,GoA1,dedicated commuter railway,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Lagos,Blue Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Tunis,RFR Line E,commuter rail,yes,yes,GoA1,,
 Moscow,Line 14 Moscow Central Circle,urban rail ring,yes,yes,GoA1,,
 Moscow,MCD-3,commuter rail,,,,,
@@ -257,15 +212,6 @@ Aarhus,Aarhus Letbane,light rail,,no,GoA1,,
 Copenhagen,Hovedstadens Letbane,light rail,,no,GoA1,,
 Kolkata,Line 1,,,,GoA1,,
 Jinan,Jiyang Tram,tram,,no,GoA0,,
-Bilbao,Line 3,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Bucharest,M5,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Sofia,M3,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Panama City,Line 2,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Quito,Line 1,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Hanoi,Line 2A,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Hanoi,Line 3,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Ho Chi Minh City,Line 1,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Dhaka,Line 6,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Lahore,Orange Line,,,,GoA4,described as Pakistan's first driverless metro,https://en.wikipedia.org/wiki/Orange_Line_(Lahore_Metro)
 Mumbai,Line 3,,,,GoA2.5,GoA2.5: built for UTO (GoA4-capable trains and signalling) but run with a driver in the cab,https://www.globalrailwayreview.com/?p=179056
 Bengaluru,Yellow Line,,,,GoA2.5,GoA2.5: built for UTO (GoA4-capable trains and signalling) but run with a driver in the cab,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
@@ -277,44 +223,5 @@ Mumbai,Line 7,,,,GoA2.5,GoA2.5: built for UTO (GoA4-capable trains and signallin
 Mumbai,Line 9,,,,GoA2.5,"GoA2.5: run by MMMOCL with its GoA4-equipped trains, with drivers",https://www.mmmocl.co.in/project_brief
 Delhi,Grey Line,,,,GoA2.5,"GoA2.5: GoA4-capable CBTC (CITYFLO 650), run with drivers",https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Navi Mumbai,Line 1,,,,GoA2.5,"GoA2.5: listed as GoA4-capable, run with drivers",https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Baku,M3 Purple Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Rio de Janeiro,Line 4,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Chennai,Blue Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
 Salvador,Line 1,,,,GoA2,"GoA2: Siemens Trainguard MT CBTC with an operator who starts each departure, and no platform screen doors",https://www.railwaypro.com/wp/?p=105234
 Salvador,Line 2,,,,GoA2,"GoA2: Siemens Trainguard MT CBTC with an operator who starts each departure, and no platform screen doors",https://www.railwaypro.com/wp/?p=105234
-Ankara,M4,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Mashhad,Line 2,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Tehran,Line 7,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Kochi,Line 1,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Lucknow,Red Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Hyderabad,Blue Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Hyderabad,Red Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Moscow,Line 11 Big Circle Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Amsterdam,M52,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Noida,Aqua Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Ahmedabad,Blue Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Nagpur,Orange Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Tehran,Line 6,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Moscow,Line 15,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Nagpur,Aqua Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Hyderabad,Green Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Kolkata,Line 2 East–West,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Tashkent,Circle Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Guadalajara,Line 3,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Minsk,Line 3,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Monterrey,Line 3,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Kanpur,Orange Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Pune,Aqua Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Pune,Purple Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Ahmedabad,Red Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Kolkata,Line 3,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Shiraz,Line 2,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Karaj,Line 2,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Agra,Yellow Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Kolkata,Line 6,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Moscow,Line 16,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Kolkata,Yellow Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Patna,Blue Line,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Saint Petersburg,Line 6,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Belo Horizonte,Linha 2,,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
-Moscow,Line 17 (Rublyovo-Arkhangelskaya),,,,GoA2,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems
