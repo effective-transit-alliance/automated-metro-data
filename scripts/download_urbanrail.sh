@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-# Download UrbanRail.net's yearly lists of new openings since 2009 into data/raw/urbanrail/.
+# Download UrbanRail.net's yearly lists of new openings since 2009 into data/raw/urbanrail/,
+# or into the directory given as the first argument.
 set -euo pipefail
 
 main() {
     local root
     root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-    local out="${root}/data/raw/urbanrail"
+    local out="${1:-${root}/data/raw/urbanrail}"
     local first_year=2009
     local last_year
     last_year="$(date +%Y)"

@@ -220,6 +220,8 @@ new events need reviewing and adding there.
 
 CI reruns every step but `download_urbanrail.sh` on each push and pull request
 and fails if any output differs from what's committed.
+It also downloads UrbanRail.net's current pages, at most once a day,
+and warns if they have events that are new or edited since the committed ones.
 It also runs `ruff`, `ty`, `pyrefly`, and `shellcheck`,
 which `uv run pre-commit install` sets up to run before each commit, too.
 

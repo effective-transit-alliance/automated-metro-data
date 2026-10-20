@@ -47,7 +47,7 @@ jobs:
 
       # Rebuild everything from the committed sources and curation files,
       # and fail if any output differs from what's committed.
-      # The UrbanRail.net pages aren't re-downloaded,
+      # This uses the committed UrbanRail.net pages, not fresh ones,
       # since new openings there need reviewing in `data/curation/events.csv` first.
       - name: rebuild
         run: |
@@ -62,3 +62,38 @@ jobs:
           git status --short
           git diff --exit-code
           test -z "$(git status --porcelain)"
+
+      # Fetch UrbanRail.net's pages at most once a day,
+      # falling back to the last day's copy if the site is down.
+      - name: get today's date
+        id: today
+        run: echo "date=$(date +%F)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/cache@v6.1.0
+        id: urbanrail
+        with:
+          path: .cache/urbanrail
+          key: urbanrail-${{ steps.today.outputs.date }}
+          restore-keys: urbanrail-
+
+      - name: download the UrbanRail.net pages
+        if: steps.urbanrail.outputs.cache-hit != 'true'
+        run: |
+          ./scripts/download_urbanrail.sh .cache/urbanrail \
+            || echo "::warning::couldn't download UrbanRail.net's pages; using the cached copy"
+
+      # Upstream changes don't fail CI, since they aren't caused by the change being tested,
+      # but they're flagged so they can be downloaded and reviewed.
+      - name: check for new or edited UrbanRail.net events
+        run: |
+          if [[ ! -s .cache/urbanrail/downloaded.txt ]]; then
+            echo "::warning::no UrbanRail.net pages to compare against"
+            exit
+          fi
+          uv run python scripts/parse_urbanrail.py .cache/urbanrail_events.csv .cache/urbanrail/*.htm
+          if diff data/urbanrail_events.csv .cache/urbanrail_events.csv; then
+            echo "the committed UrbanRail.net pages are up to date"
+          else
+            changed=$(diff data/urbanrail_events.csv .cache/urbanrail_events.csv | grep -c '^[<>]')
+            echo "::warning::UrbanRail.net has $changed new or edited event lines; rerun \`download_urbanrail.sh\` and review them"
+          fi
