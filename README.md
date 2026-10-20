@@ -209,7 +209,7 @@ named like the charts.
 ./scripts/download_camet.sh
 uv run python scripts/parse_urbanrail.py data/urbanrail_events.csv data/raw/urbanrail/*.htm
 uv run python scripts/parse_camet.py data/camet_new_lines.csv data/raw/camet/camet-*.pdf
-./scripts/extract_camet_text.sh
+uv run python scripts/extract_camet_text.py
 uv run python scripts/build_openings.py
 uv run python scripts/plot_share.py
 ```

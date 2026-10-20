@@ -1,5 +1,5 @@
-# annual-2015.pdf: selected pages, extracted by scripts/extract_camet_text.sh
-# In the new-line tables, a * on the line above a row marks an FAO line.
+# annual-2015.pdf: selected pages, extracted by scripts/extract_camet_text.py
+# In the new-line tables, a * after the row number marks an FAO line.
 
 ## Page 27
 
@@ -9,15 +9,15 @@
 
 力培养国际化人才，进一步推动城轨交通“走出去”。
 
-3.紧跟发展潮流，推广应用新技术
+3. 紧跟发展潮流，推广应用新技术
 
-  当前，全球正在兴起新一轮产业技术革命。将互联网创新成
+     当前，全球正在兴起新一轮产业技术革命。将互联网创新成
 
 果与经济社会各领域深度融合的“互联网+”,有力地推动着生产
 
 方式创新、组织形态创新、管理理念创新和商业模式创新。目前，
 
-全自动运行系统、互联互通技术、BIM 技术（建筑信息模型）已
+全自动运行系统、互联互通技术、BIM                 技术（建筑信息模型）已
 
 在一些城市率先应用。伴随着新世纪互联网技术迅猛发展，城轨
 
@@ -45,5 +45,4 @@
 
 式。
 
-                26
-
+                            26

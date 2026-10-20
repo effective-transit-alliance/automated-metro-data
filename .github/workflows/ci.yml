@@ -33,10 +33,6 @@ jobs:
       - name: shellcheck
         run: uv run shellcheck scripts/*.sh
 
-      # `extract_camet_text.sh` needs `pdftotext` and `rg`.
-      - name: install poppler and ripgrep
-        run: sudo apt-get update && sudo apt-get install -y poppler-utils ripgrep
-
       # The CAMET reports are about 30 MB and their servers are slow,
       # so only download them when the cache doesn't have this set of them.
       - uses: actions/cache@v6
@@ -57,7 +53,7 @@ jobs:
         run: |
           uv run python scripts/parse_urbanrail.py data/urbanrail_events.csv data/raw/urbanrail/*.htm
           uv run python scripts/parse_camet.py data/camet_new_lines.csv data/raw/camet/camet-*.pdf
-          ./scripts/extract_camet_text.sh
+          uv run python scripts/extract_camet_text.py
           uv run python scripts/build_openings.py
           uv run python scripts/plot_share.py
 
