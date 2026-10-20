@@ -217,3 +217,8 @@ uv run scripts/plot_share.py
 Re-parsing UrbanRail.net keeps each event's ID,
 so the reviews in [`data/curation/events.csv`](data/curation/events.csv) still apply;
 new events need reviewing and adding there.
+
+## License
+
+The code and data are under the [MIT License](LICENSE).
+The charts in [`charts/`](charts/) are under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
