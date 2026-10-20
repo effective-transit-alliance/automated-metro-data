@@ -53,7 +53,7 @@ def segments(desc):
 
 def parse(path):
     page_year = re.findall(r"\d{4}", path)[-1]
-    raw = open(path, "rb").read().decode("cp1252", errors="replace")
+    raw = Path(path).read_bytes().decode("cp1252", errors="replace")
     soup = BeautifulSoup(raw, "html.parser")
     # The HTML nests <p> tags unpredictably, so work on flat text instead,
     # with each mode icon turned into a marker that starts a new entry.

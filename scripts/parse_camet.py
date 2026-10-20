@@ -30,11 +30,11 @@ def clean_name(cell):
     # Watermark characters only leak in as whole stray characters
     # on their own line, so drop lines made up entirely of them.
     lines = (cell or "").split("\n")
-    return "".join(l for l in lines if not (l and set(l) <= WATERMARK)).strip()
+    return "".join(line for line in lines if not (line and set(line) <= WATERMARK)).strip()
 
 
 def clean_mode(cell):
-    lines = [l for l in (cell or "").split("\n") if l.strip()]
+    lines = [line for line in (cell or "").split("\n") if line.strip()]
     return lines[-1].strip() if lines else ""
 
 

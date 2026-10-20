@@ -6,7 +6,8 @@ Reads data/urban_rail_openings.csv and, for each region
 (worldwide, mainland China, and outside mainland China), writes:
 - data/automated{measure}_share_by_year{suffix}_{range}.csv: the numbers behind the chart.
 - charts/automated{measure}_share_by_year{suffix}_{range}.svg: a bar chart of the share per year.
-- charts/automated{measure}_share_by_year{suffix}_{range}.png: the same at 2x, for apps without SVG support.
+- charts/automated{measure}_share_by_year{suffix}_{range}.png: the same at 2x,
+  for apps without SVG support.
   These aren't committed.
 The measure is either the count of new lines (no {measure} part)
 or km (`_km`) of all openings, new lines and extensions alike;
@@ -123,12 +124,18 @@ def write_svg(rows, last_date, svg, region, unit, unknown_km):
     def y_of(share):
         return TOP + plot_h * (1 - share)
 
+    if unit == "km":
+        scope = "grade-separated, non-mainline openings"
+    else:
+        scope = "new-build, grade-separated, non-mainline lines"
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" '
         f'width="{WIDTH}" height="{HEIGHT}" role="img" aria-labelledby="t d" '
         'font-family="system-ui, -apple-system, Segoe UI, DejaVu Sans, sans-serif">',
-        f'<title id="t">Share of new metro lines {region} that are automated (&gt; GoA2), by year</title>',
-        f'<desc id="d">{fmt(a_all)}/{fmt(n_all)} new grade-separated, non-mainline urban rail lines '
+        f'<title id="t">Share of new metro lines {region} '
+        "that are automated (&gt; GoA2), by year</title>",
+        f'<desc id="d">{fmt(a_all)}/{fmt(n_all)} '
+        "new grade-separated, non-mainline urban rail lines "
         f"opened in 2016 to {last_date} are automated.</desc>",
         "<style>",
         ".bg{fill:#fcfcfb}.bar{fill:#2a78d6}.bar.partial{fill-opacity:.55}",
@@ -142,7 +149,7 @@ def write_svg(rows, last_date, svg, region, unit, unknown_km):
         f'<text class="t1" x="{LEFT}" y="28" font-size="17" font-weight="600">'
         f"Automated share of new metro {'km' if unit == 'km' else 'lines'}, {region}</text>",
         f'<text class="t2" x="{LEFT}" y="50" font-size="13">'
-        f"&gt; GoA2; {'grade-separated, non-mainline openings' if unit == 'km' else 'new-build, grade-separated, non-mainline lines'}; "
+        f"&gt; GoA2; {scope}; "
         f"{fmt(a_all)}/{fmt(n_all)}{' km' if unit == 'km' else ''} "
         f"({a_all / n_all:.0%}) in {first_year} to {last_year}</text>",
     ]
