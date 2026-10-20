@@ -105,6 +105,33 @@ def parse(path: str) -> Iterator[dict[str, str]]:
             }
 
 
+def line_name(description: str) -> str:
+    """The line's name, as far as UrbanRail.net's description gives one."""
+    # UrbanRail.net's current format: "[2] Termini (5 km)",
+    # named like the older formats below, so the names stay the same.
+    if m := re.match(r"\[([^\]]+)\]", description):
+        name = m.group(1)
+        if re.fullmatch(r"\d+[A-Z]?", name):
+            return f"Line {name}"
+        if m := re.fullmatch(r"L(\d+[A-Z]?)", name):
+            return f"Line {m.group(1)}"
+        return name
+    # Older ones: "Line 2", "Linea 2", "L2", and so on, are all "Line 2".
+    if m := re.match(
+        r"(Line|Linea|Línea|Ligne|Linha|Linie|Lijn) ?([A-Z]?\d+[A-Z]?)\b", description
+    ):
+        return f"Line {m.group(2)}"
+    if m := re.match(r"L(\d+[A-Z]?)\b", description):
+        return f"Line {m.group(1)}"
+    # "Purple Line", "Shin Bundang Line", "2 Line".
+    if m := re.match(r"((?:[A-Z][\w-]*|\d+) )+?Line\b", description):
+        return m.group(0)
+    # A short code like "T3", "NEL", or "2B".
+    if m := re.match(r"([A-Z]{1,3}\d*|\d+[A-Z]?)\b(?= )", description):
+        return m.group(1)
+    return ""
+
+
 def new_id(r: dict[str, str]) -> str:
     key = f"{r['date']}|{r['city']}|{r['description']}".encode()
     return hashlib.sha1(key).hexdigest()[:8]
@@ -150,6 +177,9 @@ def assign_ids(rows: list[dict[str, str]], previous: list[dict[str, str]]) -> No
             matched_new.add(i)
             matched_old.add(j)
             new[i]["id"] = old[j]["id"]
+            # Keep the line name derived when it was first parsed,
+            # so rewrites don't change it either.
+            new[i]["line"] = old[j].get("line") or new[i]["line"]
             edited += new[i]["description"] != old[j]["description"]
         gone += [p for j, p in enumerate(old) if j not in matched_old]
     ids = {p["id"] for p in previous}
@@ -181,6 +211,8 @@ def main() -> None:
             if key not in by_key or (r["new_flag"] and not by_key[key]["new_flag"]):
                 by_key[key] = r
     rows = sorted(by_key.values(), key=lambda r: (r["date"], r["city"]))
+    for r in rows:
+        r["line"] = line_name(r["description"])
     # Match against the previous parse, if any, so the IDs stay stable.
     previous: list[dict[str, str]] = []
     if Path(out).exists():
