@@ -220,8 +220,9 @@ new events need reviewing and adding there.
 
 ## License
 
-The code and data are under the [MIT License](LICENSE).
-The charts in [`charts/`](charts/) are under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-The downloaded UrbanRail.net pages in [`data/raw/urbanrail/`](data/raw/urbanrail/)
-and the CAMET report text in [`data/camet_text/`](data/camet_text/)
-belong to their original owners and are not covered by either license.
+The code in [`scripts/`](scripts/) is under the [MIT License](LICENSE).
+The data in [`data/`](data/) and the charts in [`charts/`](charts/)
+are under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+The exceptions are the downloaded UrbanRail.net pages in [`data/raw/urbanrail/`](data/raw/urbanrail/)
+and the CAMET report text in [`data/camet_text/`](data/camet_text/),
+which belong to their original owners and are not covered by either license.
