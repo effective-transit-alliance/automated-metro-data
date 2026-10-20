@@ -17,19 +17,19 @@ from pathlib import Path
 
 from bs4 import BeautifulSoup
 
+# fmt: off
 MONTHS = {
     "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
     "jul": 7, "aug": 8, "sep": 9, "sept": 9, "oct": 10, "nov": 11, "dec": 12,
 }
+# fmt: on
 # Older pages leave out the year, which then comes from the page name.
 DATE_RE = re.compile(r"^(\d{1,2})\s*([A-Za-z]+)\.?\s*(\d{4})?\s*--\s*(.*)$")
 KM_RE = re.compile(r"\(([~\d.,]+)\s*km")
 
 
 MARK = "\x00"
-SEG_RE = re.compile(
-    r"(.+?\(\s*~?[\d.,]+\s*km[^)]*\))\s*(NEW\s+[A-Z]+!)?\s*", re.S
-)
+SEG_RE = re.compile(r"(.+?\(\s*~?[\d.,]+\s*km[^)]*\))\s*(NEW\s+[A-Z]+!)?\s*", re.S)
 
 
 def segments(desc):
@@ -118,7 +118,7 @@ def main():
     rows = sorted(rows.values(), key=lambda r: (r["date"], r["city"]))
     for r in rows:
         # A stable ID for hand-kept overrides to refer to.
-        key = f'{r["date"]}|{r["city"]}|{r["description"]}'.encode()
+        key = f"{r['date']}|{r['city']}|{r['description']}".encode()
         r["id"] = hashlib.sha1(key).hexdigest()[:8]
     with open(out, "w", newline="") as f:
         fields = ["id"] + [k for k in rows[0] if k != "id"]

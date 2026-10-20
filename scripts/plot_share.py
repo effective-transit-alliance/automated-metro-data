@@ -149,7 +149,9 @@ def write_svg(rows, last_date, svg, region, unit, unknown_km):
     for share in (0, 0.25, 0.5, 0.75):
         y = y_of(share)
         cls = "axis" if share == 0 else "grid"
-        out.append(f'<line class="{cls}" x1="{LEFT}" x2="{WIDTH - RIGHT}" y1="{y:.1f}" y2="{y:.1f}"/>')
+        out.append(
+            f'<line class="{cls}" x1="{LEFT}" x2="{WIDTH - RIGHT}" y1="{y:.1f}" y2="{y:.1f}"/>'
+        )
         out.append(
             f'<text class="t2" x="{LEFT - 8}" y="{y + 4:.1f}" font-size="12" '
             f'text-anchor="end">{share:.0%}</text>'

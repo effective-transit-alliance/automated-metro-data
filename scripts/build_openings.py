@@ -92,26 +92,30 @@ def main():
             if override["GoA"] or override["GoA_basis"]:
                 goa = override["GoA"]
                 basis = override["GoA_basis"]
-                source = override["GoA_source"] or (CAMET_SOURCE if basis.startswith("CAMET") else "")
+                source = override["GoA_source"] or (
+                    CAMET_SOURCE if basis.startswith("CAMET") else ""
+                )
         automated = "" if goa == "" else ("yes" if float(goa.removeprefix("GoA")) > 2 else "no")
-        out.append({
-            "opening_date": e["date"],
-            "country": country,
-            "city": e["city"],
-            "line": e["line"],
-            "mode": mode,
-            "km": e["km"],
-            "mainline": mainline,
-            "grade_separated": graded,
-            "new_build": e["new_build"],
-            "GoA": goa,
-            "automated": automated,
-            "GoA_basis": basis,
-            "GoA_source": source,
-            "description": e["description"],
-            "note": e["note"],
-            "urbanrail_id": "" if e["id"].startswith("x") else e["id"],
-        })
+        out.append(
+            {
+                "opening_date": e["date"],
+                "country": country,
+                "city": e["city"],
+                "line": e["line"],
+                "mode": mode,
+                "km": e["km"],
+                "mainline": mainline,
+                "grade_separated": graded,
+                "new_build": e["new_build"],
+                "GoA": goa,
+                "automated": automated,
+                "GoA_basis": basis,
+                "GoA_source": source,
+                "description": e["description"],
+                "note": e["note"],
+                "urbanrail_id": "" if e["id"].startswith("x") else e["id"],
+            }
+        )
     unused = sorted(set(lines) - used)
     if unused:
         sys.exit(f"lines.csv rows matching no event: {unused}")
@@ -119,16 +123,20 @@ def main():
     write(OUT, out)
     # The new lines the line-count charts count, and the automated ones among them.
     metro_like = [
-        r for r in out
+        r
+        for r in out
         if r["new_build"] == "yes" and r["grade_separated"] == "yes" and r["mainline"] == "no"
     ]
     write(METRO_LIKE, metro_like)
     write(AUTOMATED_METRO_LIKE, [r for r in metro_like if r["automated"] == "yes"])
     # Openings the km charts leave out for lack of a length.
     unknown = [
-        r for r in out
-        if r["grade_separated"] == "yes" and r["mainline"] == "no"
-        and not r["km"] and "in-fill" not in r["note"]
+        r
+        for r in out
+        if r["grade_separated"] == "yes"
+        and r["mainline"] == "no"
+        and not r["km"]
+        and "in-fill" not in r["note"]
     ]
     fields = ["opening_date", "country", "city", "line", "new_build", "GoA", "description"]
     with open(UNKNOWN_LENGTH, "w", newline="") as f:
