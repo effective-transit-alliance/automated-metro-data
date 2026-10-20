@@ -217,6 +217,10 @@ uv run python scripts/plot_share.py
 Re-parsing UrbanRail.net keeps each event's ID,
 so the reviews in [`data/curation/events.csv`](data/curation/events.csv) still apply;
 new events need reviewing and adding there.
+UrbanRail.net sometimes rewrites entries (such as "Line 2 X" to "[2] X"),
+so `parse_urbanrail.py` matches each event to the previous parse in its output file
+by date and city, then by length and description,
+and lists the events that are new or gone.
 
 CI reruns every step but `download_urbanrail.sh` on each push and pull request
 and fails if any output differs from what's committed.

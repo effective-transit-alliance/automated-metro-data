@@ -8,6 +8,7 @@ a date, a city link, the line and its termini, the length, and an optional
 """
 
 import csv
+import difflib
 import hashlib
 import html
 import re
@@ -104,6 +105,67 @@ def parse(path: str) -> Iterator[dict[str, str]]:
             }
 
 
+def new_id(r: dict[str, str]) -> str:
+    key = f"{r['date']}|{r['city']}|{r['description']}".encode()
+    return hashlib.sha1(key).hexdigest()[:8]
+
+
+def similarity(a: dict[str, str], b: dict[str, str]) -> float:
+    def norm(r: dict[str, str]) -> str:
+        return re.sub(r"\W", "", r["description"]).lower()
+
+    return difflib.SequenceMatcher(None, norm(a), norm(b)).ratio()
+
+
+def assign_ids(rows: list[dict[str, str]], previous: list[dict[str, str]]) -> None:
+    """Give each event its ID from the previous parse, if it was in it, or else a new one.
+
+    UrbanRail.net sometimes rewrites entries (e.g. "Line 2 X" to "[2] X"),
+    so events are matched on their date and city, which it doesn't rewrite,
+    then on length and how similar their descriptions are.
+    That keeps the IDs that data/curation/events.csv refers to.
+    """
+    groups: dict[tuple[str, str], tuple[list[dict[str, str]], list[dict[str, str]]]] = {}
+    for r in rows:
+        groups.setdefault((r["date"], r["city"]), ([], []))[0].append(r)
+    for p in previous:
+        groups.setdefault((p["date"], p["city"]), ([], []))[1].append(p)
+    edited = 0
+    gone: list[dict[str, str]] = []
+    for new, old in groups.values():
+        # Best matches first: same length, then the most similar description.
+        pairs = sorted(
+            (
+                (r["km"] == p["km"], similarity(r, p), i, j)
+                for i, r in enumerate(new)
+                for j, p in enumerate(old)
+            ),
+            reverse=True,
+        )
+        matched_new: set[int] = set()
+        matched_old: set[int] = set()
+        for _, _, i, j in pairs:
+            if i in matched_new or j in matched_old:
+                continue
+            matched_new.add(i)
+            matched_old.add(j)
+            new[i]["id"] = old[j]["id"]
+            edited += new[i]["description"] != old[j]["description"]
+        gone += [p for j, p in enumerate(old) if j not in matched_old]
+    ids = {p["id"] for p in previous}
+    added = [r for r in rows if "id" not in r]
+    for r in added:
+        r["id"] = new_id(r)
+        assert r["id"] not in ids, f"ID {r['id']} is already taken"
+        ids.add(r["id"])
+    print(f"{edited} events edited upstream kept their IDs", file=sys.stderr)
+    for label, events in (("new", added), ("gone", gone)):
+        for r in events:
+            print(
+                f"{label}: {r['id']} {r['date']} {r['city']}: {r['description']}", file=sys.stderr
+            )
+
+
 def main() -> None:
     out, *pages = sys.argv[1:]
     # Leave out openings announced for after the pages were downloaded,
@@ -119,10 +181,12 @@ def main() -> None:
             if key not in by_key or (r["new_flag"] and not by_key[key]["new_flag"]):
                 by_key[key] = r
     rows = sorted(by_key.values(), key=lambda r: (r["date"], r["city"]))
-    for r in rows:
-        # A stable ID for hand-kept overrides to refer to.
-        id_key = f"{r['date']}|{r['city']}|{r['description']}".encode()
-        r["id"] = hashlib.sha1(id_key).hexdigest()[:8]
+    # Match against the previous parse, if any, so the IDs stay stable.
+    previous: list[dict[str, str]] = []
+    if Path(out).exists():
+        with open(out, newline="") as f:
+            previous = list(csv.DictReader(f))
+    assign_ids(rows, previous)
     with open(out, "w", newline="") as f:
         fields = ["id"] + [k for k in rows[0] if k != "id"]
         w = csv.DictWriter(f, fieldnames=fields)
