@@ -189,10 +189,17 @@ named like the charts.
   by line count or by km (`_km`),
   worldwide, for mainland China (`_china`), and for everywhere else (`_ex_china`),
   each for 2016–2025 (`_2016_to_2025`) and 2016–2026 (`_2016_to_2026`).
-- [`data/curation/`](data/curation/): the hand-kept tables the openings list is built from:
-  [`events.csv`](data/curation/events.csv) (each UrbanRail.net opening, reviewed),
-  [`cities.csv`](data/curation/cities.csv) (city and country names),
+- [`data/curation/`](data/curation/): manual overrides of what's derived from UrbanRail.net,
+  where it's missing or wrong, each with a note on why where it isn't obvious:
+  [`events.csv`](data/curation/events.csv) (per-event line names, new-build and include flags, lengths, and openings it doesn't list),
+  [`cities.csv`](data/curation/cities.csv) (city names, and countries its links don't give),
+  [`line_names.csv`](data/curation/line_names.csv) (per-city renames of its line names),
   and [`lines.csv`](data/curation/lines.csv) (per-line mode, mainline, grade separation, and GoA).
+  [`countries.csv`](data/curation/countries.csv) maps its country codes to countries.
+  Everything not overridden is derived:
+  every UrbanRail.net opening since 2016 is included,
+  `new_build` is its "NEW LINE!" flag,
+  and the line name comes from its description.
 - [`data/urbanrail_events.csv`](data/urbanrail_events.csv) and [`data/camet_new_lines.csv`](data/camet_new_lines.csv): parsed source data.
 - [`data/camet_text/`](data/camet_text/): the text of the CAMET report pages relied on,
   such as the new-line tables and FAO sections.
@@ -215,8 +222,8 @@ uv run python scripts/plot_share.py
 ```
 
 Re-parsing UrbanRail.net keeps each event's ID,
-so the reviews in [`data/curation/events.csv`](data/curation/events.csv) still apply;
-new events need reviewing and adding there.
+so the overrides in [`data/curation/events.csv`](data/curation/events.csv) still apply,
+and new events are built from their derived values without any manual step.
 UrbanRail.net sometimes rewrites entries (such as "Line 2 X" to "[2] X"),
 so `parse_urbanrail.py` matches each event to the previous parse in its output file
 by date and city, then by length and description,

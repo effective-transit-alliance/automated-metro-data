@@ -1,376 +1,160 @@
 urbanrail_city,city,country
-Aarhus,Aarhus,Denmark
-Abuja,Abuja,Nigeria
-Adelaide,Adelaide,Australia
-Agra,Agra,India
-Ahmedabad,Ahmedabad,India
+Abuja,,Nigeria
+Adelaide,,Australia
 Algier,Algiers,Algeria
-Almaty,Almaty,Kazakhstan
-Amsterdam,Amsterdam,Netherlands
-Angers,Angers,France
-Ankara,Ankara,Turkey
-Antalya,Antalya,Turkey
-Antwerpen,Antwerp,Belgium
-Astana,Astana,Kazakhstan
-Athens,Athens,Greece
-Athina (Athens),Athens,Greece
-Athína (Athens),Athens,Greece
-Auckland,Auckland,New Zealand
-Augsburg,Augsburg,Germany
-Avignon,Avignon,France
-Bahía de Cádiz,Cádiz,Spain
-Baku,Baku,Azerbaijan
-Bangalore,Bengaluru,India
-Bangaluru,Bengaluru,India
-Bangkok,Bangkok,Thailand
-Barcelona,Barcelona,Spain
-Barcelona/Sabadell,Barcelona,Spain
-Basel,Basel,Switzerland
-Beijing,Beijing,China
-Belgrade,Belgrade,Serbia
-Belo Horizonte,Belo Horizonte,Brazil
-Bengaluru,Bengaluru,India
-Bergen,Bergen,Norway
-Berlin,Berlin,Germany
-Bhopal,Bhopal,India
-Bilbao,Bilbao,Spain
-Birmingham,Birmingham,United Kingdom
-Birmingham (UK),Birmingham,United Kingdom
-Blackpool,Blackpool,United Kingdom
-Bochum,Bochum,Germany
-Bordeaux,Bordeaux,France
-Boston,Boston,United States
-Bratislava,Bratislava,Slovakia
-Brest,Brest,France
-Brisbane,Brisbane,Australia
-Brno,Brno,Czechia
-Brussels,Brussels,Belgium
-Bruxelles | Brussel,Brussels,Belgium
-Bucharest,Bucharest,Romania
-Bucuresti,Bucharest,Romania
-Budapest,Budapest,Hungary
-Buenos Aires,Buenos Aires,Argentina
-Buffalo,Buffalo,United States
-Bursa,Bursa,Turkey
-Busan,Busan,South Korea
-Bydgoszcz,Bydgoszcz,Poland
-Caen,Caen,France
-Cairo,Cairo,Egypt
-Canberra,Canberra,Australia
-Casablanca,Casablanca,Morocco
-Catania,Catania,Italy
-Changchun,Changchun,China
-Changsha,Changsha,China
-Changzhou,Changzhou,China
-Charlotte,Charlotte,United States
-Chemnitz,Chemnitz,Germany
-Chengdu,Chengdu,China
-Chennai,Chennai,India
-Chicago,Chicago,United States
-Chongqing,Chongqing,China
-Cincinnati,Cincinnati,United States
-Cochabamba,Cochabamba,Bolivia
-Cologne,Cologne,Germany
-Constantine,Constantine,Algeria
-Copenhagen,Copenhagen,Denmark
-Cuenca,Cuenca,Ecuador
-Daegu,Daegu,South Korea
-Dakar,Dakar,Senegal
-Dalian,Dalian,China
-Dallas,Dallas,United States
-Darmstadt,Darmstadt,Germany
-Daugavpils,Daugavpils,Latvia
-Delhi,Delhi,India
-Delhi/Gurgaon,Gurugram,India
-Delhi/Noida,Noida,India
-Den Haag (The Hague),The Hague,Netherlands
-Denver,Denver,United States
-Detroit,Detroit,United States
-Dhaka,Dhaka,Bangladesh
-Doha,Doha,Qatar
+Antwerpen,Antwerp,
+Athina (Athens),Athens,
+Athína (Athens),Athens,
+Auckland,,New Zealand
+Bahía de Cádiz,Cádiz,
+Baku,,Azerbaijan
+Bangalore,Bengaluru,
+Bangaluru,Bengaluru,
+Bangkok,,Thailand
+Barcelona/Sabadell,Barcelona,
+Belo Horizonte,,Brazil
+Birmingham (UK),Birmingham,
+Boston,,United States
+Brisbane,,Australia
+Bruxelles | Brussel,Brussels,
+Bucuresti,Bucharest,
+Buenos Aires,,Argentina
+Buffalo,,United States
+Cairo,,Egypt
+Canberra,,Australia
+Casablanca,,Morocco
+Charlotte,,United States
+Chicago,,United States
+Cincinnati,,United States
+Cochabamba,,Bolivia
+Constantine,,Algeria
+Cuenca,,Ecuador
+Dakar,,Senegal
+Dallas,,United States
+Delhi/Gurgaon,Gurugram,
+Delhi/Noida,Noida,
+Den Haag (The Hague),The Hague,
+Denver,,United States
+Detroit,,United States
+Dhaka,,Bangladesh
+Doha,,Qatar
 Doha (Lusail),Lusail,Qatar
 Doha/Lusail,Lusail,Qatar
-Dongguan,Dongguan,China
-Donostia | San Sebastián,San Sebastián,Spain
-Donostia/San Sebastián,San Sebastián,Spain
-Dubai,Dubai,United Arab Emirates
-Dublin,Dublin,Ireland
-Dujiangyan,Dujiangyan,China
-Düsseldorf,Düsseldorf,Germany
-Edinburgh,Edinburgh,United Kingdom
-Edmonton,Edmonton,Canada
-El Paso,El Paso,United States
-Eskisehir,Eskişehir,Turkey
-Firenze,Florence,Italy
-Florence,Florence,Italy
-Fortaleza,Fortaleza,Brazil
-Foshan,Foshan,China
-Frankfurt am Main,Frankfurt,Germany
-Freiburg,Freiburg,Germany
-Fukuoka,Fukuoka,Japan
-Fuzhou,Fuzhou,China
-Gaziantep,Gaziantep,Turkey
-Gdansk,Gdańsk,Poland
-Geneva,Geneva,Switzerland
-Genève,Geneva,Switzerland
-Ghent,Ghent,Belgium
-Gmunden,Gmunden,Austria
-Gold Coast,Gold Coast,Australia
-Gorzów,Gorzów Wielkopolski,Poland
-Gothenburg,Gothenburg,Sweden
-Granada,Granada,Spain
-Graz,Graz,Austria
-Grenoble,Grenoble,France
-Guadalajara,Guadalajara,Mexico
-Guangzhou,Guangzhou,China
-Guangzhou/Foshan,Guangzhou,China
-Guangzhou/Huangpu,Guangzhou,China
-Guiyang,Guiyang,China
-Hamburg,Hamburg,Germany
-Hangzhou,Hangzhou,China
-Hannover,Hanover,Germany
-Hanoi,Hanoi,Vietnam
-Harbin,Harbin,China
-Hefei,Hefei,China
-Heidelberg,Heidelberg,Germany
-Helsinki,Helsinki,Finland
-Hiroshima,Hiroshima,Japan
-Ho Chi Minh City,Ho Chi Minh City,Vietnam
-Hohhot,Hohhot,China
-Hong Kong,Hong Kong,Hong Kong
-Honolulu,Honolulu,United States
-Houston,Houston,United States
-Huangshi,Huangshi,China
-Hyderabad,Hyderabad,India
-Incheon,Incheon,South Korea
-Indore,Indore,India
-Innsbruck,Innsbruck,Austria
-Isfahan,Isfahan,Iran
-Istanbul,Istanbul,Turkey
-Izmir,İzmir,Turkey
-Izmit,İzmit,Turkey
-Jaipur,Jaipur,India
-Jakarta,Jakarta,Indonesia
-Jerusalem,Jerusalem,Israel
-Jiaxing,Jiaxing,China
-Jinan,Jinan,China
-Jinhua,Jinhua,China
-Kanpur,Kanpur,India
-Kansas City,Kansas City,United States
-Kaohsiung,Kaohsiung,Taiwan
-Karaj,Karaj,Iran
-Karlsruhe,Karlsruhe,Germany
-Katowice,Katowice,Poland
-Katowice/Sosnowiec,Katowice,Poland
-Kayseri,Kayseri,Turkey
-Kazan ',Kazan,Russia
-Kazan',Kazan,Russia
-Kharkiv,Kharkiv,Ukraine
+Donostia | San Sebastián,San Sebastián,
+Donostia/San Sebastián,San Sebastián,
+Dubai,,United Arab Emirates
+Edmonton,,Canada
+El Paso,,United States
+Eskisehir,Eskişehir,
+Firenze,Florence,
+Fortaleza,,Brazil
+Frankfurt am Main,Frankfurt,
+Gdansk,Gdańsk,
+Genève,Geneva,
+Gold Coast,,Australia
+Gorzów,Gorzów Wielkopolski,
+Guadalajara,,Mexico
+Guangzhou/Foshan,Guangzhou,
+Guangzhou/Huangpu,Guangzhou,
+Hangzhou,,China
+Hannover,Hanover,
+Hanoi,,Vietnam
+Ho Chi Minh City,,Vietnam
+Hong Kong,,Hong Kong
+Honolulu,,United States
+Houston,,United States
+Isfahan,,Iran
+Izmir,İzmir,
+Izmit,İzmit,
+Kansas City,,United States
+Kaohsiung,,Taiwan
+Katowice/Sosnowiec,Katowice,
+Kazan ',Kazan,
+Kazan',Kazan,
 Kitchener/Waterloo,Kitchener–Waterloo,Canada
-Kochi,Kochi,India
-Kolkata,Kolkata,India
-Konya,Konya,Turkey
-Krakow,Kraków,Poland
-Kraków,Kraków,Poland
-Krasnodar,Krasnodar,Russia
-Kuala Lumpur,Kuala Lumpur,Malaysia
-Kunming,Kunming,China
-L'viv,Lviv,Ukraine
-Lagos,Lagos,Nigeria
-Lahore,Lahore,Pakistan
-Lanzhou,Lanzhou,China
-Lima,Lima,Peru
-Linz,Linz,Austria
-Lisbon,Lisbon,Portugal
-Liège,Liège,Belgium
-London,London,United Kingdom
-Los Angeles,Los Angeles,United States
-Lucknow,Lucknow,India
-Lund,Lund,Sweden
-Luoyang,Luoyang,China
-Luxembourg,Luxembourg,Luxembourg
-Lviv,Lviv,Ukraine
-Lyon,Lyon,France
-Macau,Macau,Macau
-Madrid,Madrid,Spain
-Magdeburg,Magdeburg,Germany
-Magnitogorsk,Magnitogorsk,Russia
-Mainz,Mainz,Germany
-Manchester,Manchester,United Kingdom
-Manila,Manila,Philippines
-Mannheim,Mannheim,Germany
-Marseille,Marseille,France
-Mashhad,Mashhad,Iran
+Krakow,Kraków,
+Kuala Lumpur,,Malaysia
+L'viv,Lviv,
+Lagos,,Nigeria
+Lahore,,Pakistan
+Lima,,Peru
+Los Angeles,,United States
+Macau,,Macau
+Manila,,Philippines
+Mashhad,,Iran
 Maurice/Mauritius,Port Louis,Mauritius
 Mauritius,Port Louis,Mauritius
 Mauritius/Maurice,Port Louis,Mauritius
-Medellín,Medellín,Colombia
-Melbourne,Melbourne,Australia
-Mendoza,Mendoza,Argentina
-Mengzi,Mengzi,China
+Medellín,,Colombia
+Melbourne,,Australia
+Mendoza,,Argentina
 Mexico City/Toluca,Mexico City,Mexico
-Milan,Milan,Italy
-Milano,Milan,Italy
-Milwaukee,Milwaukee,United States
-Minsk,Minsk,Belarus
-Monterrey,Monterrey,Mexico
-Montpellier,Montpellier,France
-Montreal,Montreal,Canada
+Milano,Milan,
+Milwaukee,,United States
+Monterrey,,Mexico
+Montreal,,Canada
 Montréal,Montreal,Canada
-Moscow,Moscow,Russia
-Moskva,Moscow,Russia
-Moskva (Moscow),Moscow,Russia
-Mostaganem,Mostaganem,Algeria
-Mumbai,Mumbai,India
-Munich,Munich,Germany
-Málaga,Málaga,Spain
+Moskva,Moscow,
+Moskva (Moscow),Moscow,
+Mostaganem,,Algeria
 México/Toluca,Mexico City,Mexico
-Nagpur,Nagpur,India
-Naha (Okinawa),Naha,Japan
-Nanchang,Nanchang,China
-Nanjing,Nanjing,China
-Nanning,Nanning,China
-Nantes,Nantes,France
-Nantong,Nantong,China
-Naples,Naples,Italy
-Navi Mumbai,Navi Mumbai,India
-New Orleans,New Orleans,United States
-New Taipei,New Taipei,Taiwan
-New York City,New York City,United States
+Naha (Okinawa),Naha,
+New Orleans,,United States
+New Taipei,,Taiwan
+New York City,,United States
 Newcastle (NSW),Newcastle,Australia
-Nice,Nice,France
-Ningbo,Ningbo,China
-Nizhniy Novgorod,Nizhny Novgorod,Russia
-Novosibirsk,Novosibirsk,Russia
-Nuremberg,Nuremberg,Germany
-Odense,Odense,Denmark
-Oklahoma City,Oklahoma City,United States
-Olomouc,Olomouc,Czechia
-Olsztyn,Olsztyn,Poland
-Oradea,Oradea,Romania
-Osaka,Osaka,Japan
-Oslo,Oslo,Norway
-Ottawa,Ottawa,Canada
-Ouargla,Ouargla,Algeria
-Palembang,Palembang,Indonesia
-Palermo,Palermo,Italy
-Palma,Palma,Spain
+Nizhniy Novgorod,Nizhny Novgorod,
+Oklahoma City,,United States
+Ottawa,,Canada
+Ouargla,,Algeria
 Panamá,Panama City,Panama
-Paris,Paris,France
-Patna,Patna,India
-Perm,Perm,Russia
-Perth,Perth,Australia
-Phoenix,Phoenix,United States
-Plzen,Plzeň,Czechia
-Porto,Porto,Portugal
-Potsdam,Potsdam,Germany
-Poznan,Poznań,Poland
-Prague,Prague,Czechia
-Praha,Prague,Czechia
-Pune,Pune,India
-Qingdao,Qingdao,China
-Qiubei,Qiubei,China
-Quito,Quito,Ecuador
-Rabat,Rabat,Morocco
-Rennes,Rennes,France
-Riga,Riga,Latvia
-Rio de Janeiro,Rio de Janeiro,Brazil
-Riyadh,Riyadh,Saudi Arabia
-Rome,Rome,Italy
-Rotterdam,Rotterdam,Netherlands
-Salvador,Salvador,Brazil
-Samarkand,Samarkand,Uzbekistan
-Samsun,Samsun,Turkey
-San Diego,San Diego,United States
-San Francisco,San Francisco,United States
+Perth,,Australia
+Phoenix,,United States
+Plzen,Plzeň,
+Poznan,Poznań,
+Praha,Prague,
+Quito,,Ecuador
+Rabat,,Morocco
+Rio de Janeiro,,Brazil
+Riyadh,,Saudi Arabia
+Salvador,,Brazil
+San Diego,,United States
+San Francisco,,United States
 San Francisco / San José,San Francisco,United States
-Santiago,Santiago,Chile
+Santiago,,Chile
 Santiago de Chile,Santiago,Chile
-Santo Domingo,Santo Domingo,Dominican Republic
-Santos,Santos,Brazil
-Sanya,Sanya,China
+Santo Domingo,,Dominican Republic
+Santos,,Brazil
 Sao Paulo,São Paulo,Brazil
-Sarajevo,Sarajevo,Bosnia and Herzegovina
-Seattle,Seattle,United States
-Seoul,Seoul,South Korea
-Seoul/Gimpo,Gimpo,South Korea
-Sevilla,Seville,Spain
-Shanghai,Shanghai,China
-Shaoxing,Shaoxing,China
-Sheffield,Sheffield,United Kingdom
-Shenyang,Shenyang,China
-Shenzhen,Shenzhen,China
-Shijiazhuang,Shijiazhuang,China
-Shiraz,Shiraz,Iran
-Sidi Bel Abbès,Sidi Bel Abbès,Algeria
-Singapore,Singapore,Singapore
-Sofia,Sofia,Bulgaria
-St-Étienne,Saint-Étienne,France
-St. Louis,St. Louis,United States
-St. Petersburg,Saint Petersburg,Russia
-Stockholm,Stockholm,Sweden
-Strasbourg,Strasbourg,France
-Strasbourg/Kehl,Strasbourg,France
-Stuttgart,Stuttgart,Germany
-Suzhou,Suzhou,China
-Sydney,Sydney,Australia
-Szczecin,Szczecin,Poland
-Szeged,Szeged,Hungary
-São Paulo,São Paulo,Brazil
-Sétif,Sétif,Algeria
-Tabriz,Tabriz,Iran
-Tacoma,Tacoma,United States
-Taichung,Taichung,Taiwan
-Taipei,Taipei,Taiwan
-Taipei (New Taipei),New Taipei,Taiwan
+Seattle,,United States
+Seoul/Gimpo,Gimpo,
+Sevilla,Seville,
+Shiraz,,Iran
+Sidi Bel Abbès,,Algeria
+Singapore,,Singapore
+St-Étienne,Saint-Étienne,
+St. Louis,,United States
+St. Petersburg,Saint Petersburg,
+Strasbourg/Kehl,Strasbourg,
+Sydney,,Australia
+São Paulo,,Brazil
+Sétif,,Algeria
+Tacoma,,United States
+Taipei (New Taipei),New Taipei,
 Taipei / Taoyuan,Taoyuan,Taiwan
-Taiyuan,Taiyuan,China
-Taizhou,Taizhou,China
-Tallinn,Tallinn,Estonia
-Tampere,Tampere,Finland
-Taoyuan,Taoyuan,Taiwan
-Tashkent,Tashkent,Uzbekistan
-Tbilisi,Tbilisi,Georgia
-Tehran,Tehran,Iran
-Tel Aviv,Tel Aviv,Israel
+Tbilisi,,Georgia
+Tehran,,Iran
 Tempe (Phoenix),Phoenix,United States
-The Hague/Delft,The Hague,Netherlands
-Thessaloniki,Thessaloniki,Greece
-Tianjin,Tianjin,China
-Tianshui,Tianshui,China
-Tokyo,Tokyo,Japan
-Toronto,Toronto,Canada
-Torun,Toruń,Poland
-Toshkent,Tashkent,Uzbekistan
-Toulouse,Toulouse,France
-Tunis,Tunis,Tunisia
-Turin,Turin,Italy
-Uijeongbu,Uijeongbu,South Korea
-Ulm,Ulm,Germany
-Utrecht,Utrecht,Netherlands
-Utsunomiya,Utsunomiya,Japan
-Valencia,Valencia,Spain
-Vancouver,Vancouver,Canada
-Vienna,Vienna,Austria
-Vitoria-Gasteiz,Vitoria-Gasteiz,Spain
-Warsaw,Warsaw,Poland
-Warszawa,Warsaw,Poland
+The Hague/Delft,The Hague,
+Toronto,,Canada
+Torun,Toruń,
+Toshkent,Tashkent,
+Tunis,,Tunisia
+Vancouver,,Canada
+Warszawa,Warsaw,
 Washington DC,"Washington, D.C.",United States
-"Washington, D.C.","Washington, D.C.",United States
-Wenzhou,Wenzhou,China
-Wonsan,Wonsan,North Korea
-Wroclaw,Wrocław,Poland
-Wuhan,Wuhan,China
-Wuhu,Wuhu,China
-Wuxi,Wuxi,China
-Xi'an,Xi'an,China
-Xiamen,Xiamen,China
-Xi’an,Xi'an,China
-Xuzhou,Xuzhou,China
-Yekaterinburg,Yekaterinburg,Russia
-Yokohama,Yokohama,Japan
-Zhengzhou,Zhengzhou,China
-Zhuhai,Zhuhai,China
-Zürich,Zürich,Switzerland
+"Washington, D.C.",,United States
+Wonsan,,North Korea
+Wroclaw,Wrocław,
+Xi’an,Xi'an,
 al-Qahirah (Cairo),Cairo,Egypt
-Ürümqi,Ürümqi,China

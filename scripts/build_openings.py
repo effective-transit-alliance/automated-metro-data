@@ -1,11 +1,15 @@
-"""Build data/urban_rail_openings.csv and its filtered subsets from the curation files.
+"""Build data/urban_rail_openings.csv and its filtered subsets.
 
 Usage: python build_openings.py
 
-Inputs, all in data/curation/:
-- events.csv: one row per UrbanRail.net opening (plus a few added rows),
-  with the hand-reviewed line name, new-build flag, and include flag.
-- cities.csv: UrbanRail.net city names to clean city and country names.
+Every UrbanRail.net opening since 2016 in data/urbanrail_events.csv is included,
+with each field derived from it, unless one of the overrides in data/curation/ says otherwise.
+In all of them, a blank field means "use the derived value", and "-" means "leave it blank".
+- events.csv: per-event overrides, keyed by UrbanRail.net event ID,
+  plus openings UrbanRail.net doesn't list, whose IDs start with "x".
+- cities.csv: per-city overrides of the city's name and country.
+  The country is otherwise derived from the city's UrbanRail.net link, through countries.csv.
+- line_names.csv: per-city renames of the line names parse_urbanrail.py derives.
 - lines.csv: per-line overrides of mode, mainline, grade separation, and GoA.
   Lines not listed there get the defaults for their UrbanRail.net mode below.
 """
@@ -16,6 +20,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CURATION = ROOT / "data" / "curation"
+EVENTS = ROOT / "data" / "urbanrail_events.csv"
+FIRST_DATE = "2016-01-01"
 OUT = ROOT / "data" / "urban_rail_openings.csv"
 UNKNOWN_LENGTH = ROOT / "data" / "unknown_length_openings.csv"
 METRO_LIKE = ROOT / "data" / "metro_like_openings.csv"
@@ -59,22 +65,67 @@ FIELDS = [
 ]
 
 
-def read(name: str) -> list[dict[str, str]]:
-    with open(CURATION / name, newline="") as f:
+def read(path: Path) -> list[dict[str, str]]:
+    with open(path, newline="") as f:
         return list(csv.DictReader(f))
 
 
+def override(value: str, derived: str) -> str:
+    """Apply an override field: blank keeps the derived value, and "-" blanks it."""
+    if value == "-":
+        return ""
+    return value or derived
+
+
+def events() -> list[dict[str, str]]:
+    """Every opening, with each field derived and then overridden."""
+    countries = {r["code"]: r["country"] for r in read(CURATION / "countries.csv")}
+    cities = {r["urbanrail_city"]: r for r in read(CURATION / "cities.csv")}
+    renames = {
+        (r["city"], r["urbanrail_line"]): r["line"] for r in read(CURATION / "line_names.csv")
+    }
+    overrides = {r["id"]: r for r in read(CURATION / "events.csv")}
+    out = []
+    for e in read(EVENTS):
+        if e["date"] < FIRST_DATE:
+            continue
+        o = overrides.pop(e["id"], {})
+        c = cities.get(e["city"], {})
+        city = override(c.get("city", ""), e["city"])
+        derived_line = renames.get((city, e["line"]), e["line"])
+        description = override(o.get("description", ""), e["description"])
+        row = {
+            "id": e["id"],
+            "date": override(o.get("date", ""), e["date"]),
+            "urbanrail_mode": override(o.get("urbanrail_mode", ""), e["mode"]),
+            "city": override(o.get("city", ""), city),
+            "country": override(c.get("country", ""), countries.get(e["country_code"], "")),
+            "line": override(o.get("line", ""), derived_line),
+            "new_build": override(o.get("new_build", ""), "yes" if e["new_flag"] else "no"),
+            "include": override(o.get("include", ""), "yes"),
+            "km": override(o.get("km", ""), str(float(e["km"])) if e["km"] else ""),
+            "description": description,
+            "note": override(o.get("note", ""), ""),
+        }
+        out.append(row)
+    unused = sorted(i for i in overrides if not i.startswith("x"))
+    if unused:
+        sys.exit(f"events.csv rows matching no event: {unused}")
+    # Openings UrbanRail.net doesn't list, given in full.
+    country_of = {r["city"]: r["country"] for r in out}
+    for o in overrides.values():
+        out.append({**o, "country": country_of.get(o["city"], "")})
+    return out
+
+
 def main() -> None:
-    cities = {}
-    for r in read("cities.csv"):
-        cities[r["city"]] = r["country"]
-    lines = {(r["city"], r["line"]): r for r in read("lines.csv")}
+    lines = {(r["city"], r["line"]): r for r in read(CURATION / "lines.csv")}
     used = set()
     out = []
-    for e in read("events.csv"):
+    for e in events():
         if e["include"] != "yes":
             continue
-        country = cities[e["city"]]
+        country = e["country"]
         mode, mainline, graded, goa = DEFAULTS[e["urbanrail_mode"]]
         if e["urbanrail_mode"] == "s-bahn" and country == "China":
             mode, mainline, graded, goa = CHINA_SUBURBAN

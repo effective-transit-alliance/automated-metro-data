@@ -361,8 +361,8 @@ opening_date,country,city,line,mode,km,mainline,grade_separated,new_build,GoA,au
 2018-12-28,China,Guangzhou,Line 21,suburban metro,25.2,no,yes,yes,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 21 Zhenlongxi - Zengcheng Square (25.2 km),,f33e5a60
 2018-12-28,China,Wuhan,Line 7,metro,17.0,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 7 Yezhi Lake - Qinglongshan Ditiexiaozhen (17 km),,c57c2cd6
 2018-12-30,China,Beijing,Line 6,metro,10.6,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 6 Haidian Wuluju - Jin'anqiao (10.6 km),,8a728990
-2018-12-30,China,Beijing,Line 8,metro,,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 8 Nanluoguxiang - National Art Museum,,1d459596
 2018-12-30,China,Beijing,Line 8,metro,10.3,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 8 Zhushikou - Yinghai (10.3 km),,aba975e4
+2018-12-30,China,Beijing,Line 8,metro,,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 8 Nanluoguxiang - National Art Museum,,1d459596
 2018-12-30,China,Shanghai,Line 13,metro,16.0,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 13 Shibo Avenue - Zhangjiang Road (16 km),,bc53fb97
 2018-12-30,China,Shanghai,Line 5,metro,16.4,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 5 Dongchuan Road - Fengxian Xincheng (16.4 km),,ecda45a5
 2018-12-30,Russia,Moscow,Line 8A Solntsevskaya,metro,1.8,no,yes,no,GoA2,no,mode default; unverified,,L8A/11 Petrovsiky Park - Savyolovskaya (1.8 km),,1dbdd9c4
@@ -903,8 +903,8 @@ opening_date,country,city,line,mode,km,mainline,grade_separated,new_build,GoA,au
 2023-01-19,India,Mumbai,Line 2A,metro,9.0,no,yes,no,GoA2.5,yes,GoA2.5: built for UTO (GoA4-capable trains and signalling) but run with a driver in the cab,https://www.railwaygazette.com/metro/mumbai-metro-opening/61318.article,Line 2A Dahanukarwadi – Andheri West (9 km),,9fcbd08e
 2023-01-19,India,Mumbai,Line 7,metro,6.2,no,yes,no,GoA2.5,yes,GoA2.5: built for UTO (GoA4-capable trains and signalling) but run with a driver in the cab,https://www.railwaygazette.com/metro/mumbai-metro-opening/61318.article,Line 7 Aarey – Gundavali (6.2 km),,0dceff42
 2023-01-22,Turkey,Istanbul,M11,airport express metro,34.0,no,yes,yes,GoA4,yes,UTO,https://railturkey.org/2023/01/18/istanbul-airport-metro-opens/,Line 11 Kagithane – Istanbul Havalimani (Kargo Terminali) (34 km),,313909bb
-2023-01-23,Mauritius,Port Louis,Metro Express,light rail,,no,no,no,GoA1,no,,,& Port Louis Victora – Pl. d'Armes,,b5d8cf14
 2023-01-23,Mauritius,Port Louis,Metro Express,light rail,3.2,no,no,no,GoA1,no,,,Rose Hill – Mahatma Gandhi (3.2 km),,c65ff89c
+2023-01-23,Mauritius,Port Louis,Metro Express,light rail,,no,no,no,GoA1,no,,,& Port Louis Victora – Pl. d'Armes,,b5d8cf14
 2023-01-25,United States,New York City,LIRR (Grand Central Madison),commuter rail,,yes,no,no,GoA1,no,mode default; unverified,,"LIRR Woodside – Grand Central Madison (~ 5 km, limited service! )",new mainline terminal branch,d5df416b
 2023-02-04,China,Beijing,Changping Line,metro,9.7,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Changping Line Qinghe – Xitucheng (9.7 km),,bc02f490
 2023-02-08,Iran,Shiraz,Line 2,metro,,no,yes,yes,GoA2,no,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems,"Line 2 Emam Hossein – Qahramanan (xx km, limited service! )",,75f2ada6
@@ -999,8 +999,8 @@ opening_date,country,city,line,mode,km,mainline,grade_separated,new_build,GoA,au
 2023-09-29,China,Harbin,Line 3,metro,3.3,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 3 Taipingqiao – Chinese-baroque Block (3.3 km),,737ed91f
 2023-09-29,China,Shenyang,Line 2,metro,14.2,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 2 Quanyun Lu – Taoxian Jichang (14.2 km),,3c49abe4
 2023-09-29,China,Shenyang,Line 4,metro,34.0,no,yes,yes,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 4 Zhengxin Lu – Chuangxin Lu (34 km),,e9a1e606
-2023-10-09,India,Bengaluru,Purple Line,metro,2.0,no,yes,no,GoA2,no,mode default; unverified,,Kengeri – Challaghatta (2 km),,47a93e7b
 2023-10-09,India,Bengaluru,Purple Line,metro,2.8,no,yes,no,GoA2,no,mode default; unverified,,Purple Line Baiyappanahalli – Krishnarajapura (2.8 km),,b7e8cc1c
+2023-10-09,India,Bengaluru,Purple Line,metro,2.0,no,yes,no,GoA2,no,mode default; unverified,,Kengeri – Challaghatta (2 km),,47a93e7b
 2023-10-10,Iran,Tehran,Lines 6 and 7,metro,,no,yes,no,GoA2,no,mode default; unverified,,Line 6 Shahid Sattari – Shahid Arman Aliverdi (Kouhsar) & Line 7 Shahid Dadman – Meydan-e Ketab,,4317d890
 2023-10-13,Czechia,Prague,Line 4,tram,0.5,no,no,no,GoA0,no,mode default; unverified,,Line 4/5 Holyne – Slivenec (0.5 km),,0cc92ad5
 2023-10-20,France,Lyon,Line B,metro,2.4,no,yes,no,GoA4,yes,converted to UTO in 2022,https://en.wikipedia.org/wiki/List_of_driverless_train_systems,Ligne B Gare d’Oullins – Saint Genis-Laval Hôpital Lyon Sud (2.4 km),,916a2435
