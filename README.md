@@ -207,11 +207,11 @@ named like the charts.
 ```sh
 ./scripts/download_urbanrail.sh
 ./scripts/download_camet.sh
-uv run --with beautifulsoup4 python scripts/parse_urbanrail.py data/urbanrail_events.csv data/raw/urbanrail/*.htm
-uv run --with pdfplumber python scripts/parse_camet.py data/camet_new_lines.csv data/raw/camet/camet-*.pdf
+uv run python scripts/parse_urbanrail.py data/urbanrail_events.csv data/raw/urbanrail/*.htm
+uv run python scripts/parse_camet.py data/camet_new_lines.csv data/raw/camet/camet-*.pdf
 ./scripts/extract_camet_text.sh
 uv run python scripts/build_openings.py
-uv run scripts/plot_share.py
+uv run python scripts/plot_share.py
 ```
 
 Re-parsing UrbanRail.net keeps each event's ID,

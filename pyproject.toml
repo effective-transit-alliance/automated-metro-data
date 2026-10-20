@@ -1,0 +1,42 @@
+[project]
+name = "automated-metro-data"
+version = "0.1.0"
+description = "The share of new metro lines opened worldwide since 2016 that are automated"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "pdfplumber>=0.11.10",
+    "resvg-py>=0.5.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.pyrefly]
+preset = "strict"
+
+[tool.ty.rules]
+blanket-ignore-comment = "warn"
+division-by-zero = "warn"
+missing-override-decorator = "warn"
+missing-type-argument = "warn"
+possibly-missing-attribute = "warn"
+possibly-missing-import = "warn"
+possibly-unresolved-reference = "warn"
+unsupported-dynamic-base = "warn"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.7.0",
+    "pyrefly>=1.4.0",
+    "ruff>=0.17.1",
+    "shellcheck-py>=0.11.0.1",
+    "ty>=0.0.89",
+]

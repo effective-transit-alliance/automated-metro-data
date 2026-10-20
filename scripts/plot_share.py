@@ -1,9 +1,6 @@
-# /// script
-# dependencies = ["resvg-py"]
-# ///
 """Chart the share of new lines that are automated (above GoA2), by year.
 
-Usage: uv run scripts/plot_share.py
+Usage: uv run python scripts/plot_share.py
 
 Reads data/urban_rail_openings.csv and, for each region
 (worldwide, mainland China, and outside mainland China), writes:
