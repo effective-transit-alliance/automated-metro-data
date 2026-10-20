@@ -157,11 +157,13 @@ named like the charts.
   The seven Chinese lines opened in the second half of 2026 aren't in a CAMET table yet;
   their GoA comes from news coverage of their openings.
   Every counted line has a source in `GoA_source`.
-  Outside China, automated lines cite Wikipedia's
+  Outside China, a line's GoA comes from Wikipedia's
   [list of driverless train systems](https://en.wikipedia.org/wiki/List_of_driverless_train_systems)
-  or, where it gives one, the source it cites, or an operator or news report.
-  Lines missing from that list are tagged GoA2, citing the list;
-  for those, GoA1 vs. GoA2 is unverified.
+  as of when the line opened, or as of 2016 if it opened earlier,
+  unless a researched value in `lines.csv` overrides it,
+  citing the source the list cites, or an operator or news report.
+  Lines missing from that list get the default for their mode,
+  and for those, GoA1 vs. GoA2 is unverified.
   Openings that aren't counted (extensions, trams, mainline)
   mostly keep the default GoA for their mode,
   marked "mode default; unverified".
@@ -176,6 +178,8 @@ named like the charts.
   and marks the FAO ones,
   and its annual reports list the new FAO lines for 2021 and 2022.
 - News coverage of openings, for GoA where CAMET has nothing yet.
+- Wikipedia's [list of driverless train systems](https://en.wikipedia.org/wiki/List_of_driverless_train_systems),
+  for GoA outside mainland China.
 - [UITP Statistics Brief on metro automation](https://cms.uitp.org/wp/wp-content/uploads/2020/06/Statistics-Brief-Metro-automation_final_web03.pdf) (2019).
 
 ## Layout
@@ -194,16 +198,17 @@ named like the charts.
   [`events.csv`](data/curation/events.csv) (per-event line names, new-build and include flags, lengths, and openings it doesn't list),
   [`cities.csv`](data/curation/cities.csv) (city names, and countries its links don't give),
   [`line_names.csv`](data/curation/line_names.csv) (per-city renames of its line names),
-  and [`lines.csv`](data/curation/lines.csv) (per-line mode, mainline, grade separation, and GoA).
+  [`lines.csv`](data/curation/lines.csv) (per-line mode, mainline, grade separation, and GoA),
+  and [`wikipedia_lines.csv`](data/curation/wikipedia_lines.csv) (lines in Wikipedia's list whose names don't match automatically).
   [`countries.csv`](data/curation/countries.csv) maps its country codes to countries.
   Everything not overridden is derived:
   every UrbanRail.net opening since 2016 is included,
   `new_build` is its "NEW LINE!" flag,
   and the line name comes from its description.
-- [`data/urbanrail_events.csv`](data/urbanrail_events.csv) and [`data/camet_new_lines.csv`](data/camet_new_lines.csv): parsed source data.
+- [`data/urbanrail_events.csv`](data/urbanrail_events.csv), [`data/camet_new_lines.csv`](data/camet_new_lines.csv), and [`data/wikipedia_driverless.csv`](data/wikipedia_driverless.csv): parsed source data.
 - [`data/camet_text/`](data/camet_text/): the text of the CAMET report pages relied on,
   such as the new-line tables and FAO sections.
-- [`data/raw/urbanrail/`](data/raw/urbanrail/): the downloaded UrbanRail.net pages.
+- [`data/raw/urbanrail/`](data/raw/urbanrail/) and [`data/raw/wikipedia/`](data/raw/wikipedia/): the downloaded UrbanRail.net pages and Wikipedia list.
   The CAMET reports, about 30 MB, are downloaded into `data/raw/camet/` but not committed;
   [`scripts/download_camet.sh`](scripts/download_camet.sh) falls back to archived copies
   and checks them against [`data/camet_sha256sums.txt`](data/camet_sha256sums.txt).
@@ -214,8 +219,10 @@ named like the charts.
 ```sh
 ./scripts/download_urbanrail.sh
 ./scripts/download_camet.sh
+./scripts/download_wikipedia.sh
 uv run python scripts/parse_urbanrail.py data/urbanrail_events.csv data/raw/urbanrail/*.htm
 uv run python scripts/parse_camet.py data/camet_new_lines.csv data/raw/camet/camet-*.pdf
+uv run python scripts/parse_wikipedia.py data/wikipedia_driverless.csv data/raw/wikipedia/list_of_driverless_train_systems.html
 uv run python scripts/extract_camet_text.py
 uv run python scripts/build_openings.py
 uv run python scripts/plot_share.py
@@ -229,7 +236,7 @@ so `parse_urbanrail.py` matches each event to the previous parse in its output f
 by date and city, then by length and description,
 and lists the events that are new or gone.
 
-CI reruns every step but `download_urbanrail.sh` on each push and pull request
+CI reruns every step but `download_urbanrail.sh` and `download_wikipedia.sh` on each push and pull request
 and fails if any output differs from what's committed.
 It also downloads UrbanRail.net's current pages, at most once a day,
 and warns if they have events that are new or gone since the committed ones.

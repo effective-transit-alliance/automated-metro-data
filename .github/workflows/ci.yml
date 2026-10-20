@@ -50,13 +50,14 @@ jobs:
 
       # Rebuild everything from the committed sources and curation files,
       # and fail if any output differs from what's committed.
-      # This uses the committed UrbanRail.net pages, not fresh ones,
+      # This uses the committed UrbanRail.net pages and Wikipedia list, not fresh ones,
       # since new openings there need reviewing in `data/curation/events.csv` first.
       - name: rebuild
         run: |
           uv run python scripts/parse_urbanrail.py data/urbanrail_events.csv data/raw/urbanrail/*.htm
           uv run python scripts/parse_camet.py data/camet_new_lines.csv data/raw/camet/camet-*.pdf
           uv run python scripts/extract_camet_text.py
+          uv run python scripts/parse_wikipedia.py data/wikipedia_driverless.csv data/raw/wikipedia/list_of_driverless_train_systems.html
           uv run python scripts/build_openings.py
           uv run python scripts/plot_share.py
 

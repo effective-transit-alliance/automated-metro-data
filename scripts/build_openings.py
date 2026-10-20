@@ -11,11 +11,16 @@ In all of them, a blank field means "use the derived value", and "-" means "leav
   The country is otherwise derived from the city's UrbanRail.net link, through countries.csv.
 - line_names.csv: per-city renames of the line names parse_urbanrail.py derives.
 - lines.csv: per-line overrides of mode, mainline, grade separation, and GoA.
-  Lines not listed there get the defaults for their UrbanRail.net mode below.
+  Lines not listed there get the defaults for their UrbanRail.net mode below,
+  except for the GoA of lines outside mainland China in Wikipedia's list of driverless systems
+  (data/wikipedia_driverless.csv), which comes from that list.
+- wikipedia_lines.csv: the lines of that list that aren't matched automatically.
 """
 
 import csv
+import re
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -23,6 +28,7 @@ CURATION = ROOT / "data" / "curation"
 EVENTS = ROOT / "data" / "urbanrail_events.csv"
 FIRST_DATE = "2016-01-01"
 OUT = ROOT / "data" / "urban_rail_openings.csv"
+WIKIPEDIA = ROOT / "data" / "wikipedia_driverless.csv"
 UNKNOWN_LENGTH = ROOT / "data" / "unknown_length_openings.csv"
 METRO_LIKE = ROOT / "data" / "metro_like_openings.csv"
 AUTOMATED_METRO_LIKE = ROOT / "data" / "automated_metro_like_openings.csv"
@@ -44,6 +50,10 @@ DEFAULT_BASIS = "mode default; unverified"
 # leave no room for unlisted ones before that.
 CAMET_SOURCE = "https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/)"
 CHINA_NOT_FAO = "CAMET: not FAO (inferred from its FAO tables and totals)"
+WIKIPEDIA_SOURCE = "https://en.wikipedia.org/wiki/List_of_driverless_train_systems"
+NOT_IN_WIKIPEDIA = (
+    "not in Wikipedia's list of GoA3/GoA4 systems; otherwise mode default, unverified"
+)
 
 FIELDS = [
     "opening_date",
@@ -75,6 +85,58 @@ def override(value: str, derived: str) -> str:
     if value == "-":
         return ""
     return value or derived
+
+
+def line_key(line: str) -> str:
+    """A line name stripped of what the list and UrbanRail.net write differently.
+
+    "North–South MRT line" and "North–South Line" are both "north–south",
+    and "Line M4", "Line 4 (Yellow)", and "M4" are all "4".
+    """
+    s = re.sub(r"\(.*?\)", "", line).lower()
+    s = re.sub(r"\b(?:mrt |lrt )?line\b", "", s)
+    s = re.sub(r"\bm(\d)", r"\1", s)
+    return " ".join(s.split())
+
+
+def wikipedia(lines: set[tuple[str, str]]) -> dict[tuple[str, str], list[tuple[str, str]]]:
+    """Each of the given (city, line)s in Wikipedia's list, with its (since, GoA)s in order.
+
+    A line is matched automatically if its city is in the system's name
+    and its name is the same up to line_key; wikipedia_lines.csv gives the rest.
+    """
+    mapped = defaultdict(list)
+    for r in read(CURATION / "wikipedia_lines.csv"):
+        mapped[(r["system"], r["wikipedia_line"])].append((r["city"], r["line"]))
+    unknown = sorted(t for ts in mapped.values() for t in ts if t not in lines)
+    if unknown:
+        sys.exit(f"wikipedia_lines.csv rows matching no line: {unknown}")
+    by_city = defaultdict(list)
+    for city, line in lines:
+        by_city[city].append(line)
+    out = defaultdict(list)
+    used = set()
+    for w in read(WIKIPEDIA):
+        if w["country"].startswith("China"):
+            continue
+        key = (w["system"], w["line"])
+        if key in mapped:
+            used.add(key)
+            targets = mapped[key]
+        else:
+            targets = [
+                (city, line)
+                for city in by_city
+                if city in w["system"]
+                for line in by_city[city]
+                if line_key(line) == line_key(w["line"])
+            ]
+        for t in targets:
+            out[t].append((w["since"], w["GoA"]))
+    unused = sorted(set(mapped) - used)
+    if unused:
+        sys.exit(f"wikipedia_lines.csv rows matching nothing in the list: {unused}")
+    return {t: sorted(v) for t, v in out.items()}
 
 
 def events() -> list[dict[str, str]]:
@@ -120,11 +182,18 @@ def events() -> list[dict[str, str]]:
 
 def main() -> None:
     lines = {(r["city"], r["line"]): r for r in read(CURATION / "lines.csv")}
+    included = [e for e in events() if e["include"] == "yes"]
+    # The list's GoA applies from when each line opened, or from before 2016 if it opened earlier,
+    # since lines converted after opening keep the GoA they opened with.
+    opened = {}
+    for e in included:
+        if e["new_build"] == "yes":
+            key = (e["city"], e["line"])
+            opened[key] = min(opened.get(key, e["date"]), e["date"])
+    listed = wikipedia({(e["city"], e["line"]) for e in included})
     used = set()
     out = []
-    for e in events():
-        if e["include"] != "yes":
-            continue
+    for e in included:
         country = e["country"]
         mode, mainline, graded, goa = DEFAULTS[e["urbanrail_mode"]]
         if e["urbanrail_mode"] == "s-bahn" and country == "China":
@@ -134,6 +203,18 @@ def main() -> None:
         if country == "China" and e["urbanrail_mode"] != "tram":
             basis = CHINA_NOT_FAO
             source = CAMET_SOURCE
+        elif e["urbanrail_mode"] != "tram":
+            basis = NOT_IN_WIKIPEDIA
+            source = WIKIPEDIA_SOURCE
+            timeline = listed.get((e["city"], e["line"]), [])
+            since = opened.get((e["city"], e["line"]), FIRST_DATE)
+            before = [(d, g) for d, g in timeline if d <= since[: len(d)]]
+            if before:
+                d, goa = before[-1]
+                basis = f"Wikipedia: {goa} since {d}"
+            elif timeline:
+                d, g = timeline[0]
+                basis = f"Wikipedia: {g} only since {d}, after opening; otherwise mode default"
         override = lines.get((e["city"], e["line"]))
         if override:
             used.add((e["city"], e["line"]))
