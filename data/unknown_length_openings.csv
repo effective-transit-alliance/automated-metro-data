@@ -99,11 +99,11 @@ opening_date,country,city,line,new_build,GoA,description
 2025-06-28,South Korea,Incheon,Line 1,no,GoA2,Line 1 Gyeyang – Geomdan Lake Park
 2025-08-22,India,Kolkata,Yellow Line,yes,GoA2,YL Noapara – Jai Hind Bimanbandar (Green and Orange lines extended the same day)
 2025-12-26,Russia,Saint Petersburg,Line 6,yes,GoA2,Line 6 Putilovskaya — Yugo-Zapadnaya
-2026-07-01,China,Hefei,Line 7,yes,GoA4,Line 7 Feicui Gongyuan — Sheng Wenhuahefeiyiguan
-2026-07-02,Brazil,São Paulo,Line 6,yes,GoA4,Line 6 João Paulo I — Perdizes
-2026-07-02,India,Patna,Blue Line,no,GoA2,BL Bhootnath — Malahi Pakri
-2026-07-03,Brazil,Belo Horizonte,Linha 2,yes,GoA2,Linha 2 Nova Suíça — Amazonas  (limited service)
-2026-07-12,Singapore,Singapore,Circle Line,no,GoA4,Circle Line Harbour Front — Marina Bay
+2026-07-01,China,Hefei,Line 7,yes,GoA4,[7] Feicui Gongyuan — Sheng Wenhuahefeiyiguan
+2026-07-02,Brazil,São Paulo,Line 6,yes,GoA4,[6] João Paulo I — Perdizes
+2026-07-02,India,Patna,Blue Line,no,GoA2,[BL] Bhootnath — Malahi Pakri
+2026-07-03,Brazil,Belo Horizonte,Linha 2,yes,GoA2,[2] Nova Suíça — Amazonas  (limited service)
+2026-07-12,Singapore,Singapore,Circle Line,no,GoA4,[CL] Harbour Front — Marina Bay
 2026-09-16,China,Xiamen,Line 4,yes,GoA4,[4] Jimei Software Park North — Qianwu
 2026-09-16,China,Xiamen,Line 6,yes,GoA4,[6] Jiaojiang Road — Huaqiao University
 2026-09-22,China,Qingdao,Line 8,no,GoA2,[8] Qingdao North Railway Station — May 4th Square

@@ -1913,81 +1913,81 @@ e71d7dca,2025-12-28,metro,as,cn,Shenzhen,Line 13 Hi-Tech Central — Shangwu & L
 0101fbe0,2025-12-29,s-bahn,as,cn,Guangzhou,Line 22 Chentougang – Fangcun (11.5 km),11.5,,as/cn/guan/guangzhou.htm,Line 22
 dad14cfb,2025-12-29,metro,as,cn,Xi'an,Line 15 Xiliu – Dongzhaoyu (19.5 km),19.5,NEW LINE!,as/cn/xian/xian.htm,Line 15
 bff764b6,2025-12-30,light-rail,as,cn,Jinan,Jiyang Line Jinan North Railway Station – Jiyang North (36.1 km),36.1,NEW LINE!,as/cn/jinan/jinan.htm,Jiyang Line
-ee0a3260,2026-01-07,tram,eu,fr,Marseille,T3 Arenc – Capitaine Gèze (1.6 km),1.6,,eu/fr/marseille/marseille.htm,T3
+ee0a3260,2026-01-07,tram,eu,fr,Marseille,[T3] Arenc – Capitaine Gèze (1.6 km),1.6,,eu/fr/marseille/marseille.htm,T3
 e4200f27,2026-01-07,tram,eu,fr,Marseille,Castellane – La Gaye (4.4 km),4.4,,eu/fr/marseille/marseille.htm,
 5d4d8aa7,2026-01-07,tram,eu,fr,Marseille,Happy New Year 2026!,,,eu/fr/marseille/marseille.htm,
-c4f4f30c,2026-01-11,metro,as,in,Ahmedabad,Line 2 Sachivalaya – Mahatma Mandir (5.4 km),5.4,,as/in/ahmedabad/ahmedabad.htm,Line 2
-ff8fd639,2026-01-16,metro,as,cn,Ningbo,Line 6 Gulin – Honglian (35.1 km),35.1,NEW LINE!,as/cn/ningbo/ningbo.htm,Line 6
-5c720c49,2026-01-18,metro,as,cn,Tianjin,Line Z4 Beitang – Zhaishang (23.7 km),23.7,NEW LINE!,as/cn/tian/tianjin.htm,Line Z4
-65759d82,2026-01-28,s-bahn,as,cn,Guangzhou,Guangzhou-Qingyuan Intercity Huadu – Guangzhoubaiyun,,,as/cn/guan/guangzhou.htm,
-60713e44,2026-02-02,s-bahn,,,Mexico City/Toluca,El Insurgente Santa Fe — Observatorio (8.5 km),8.5,,,
-87eb4dd6,2026-02-08,light-rail,,,Toronto,Line 5 Mount Dennis – Kennedy (19 km),19,NEW LINE!,,Line 5
-acb1977d,2026-02-09,metro,,,Belo Horizonte,Line 1 Eldorado — Novo Eldorado (1.5 km),1.5,,,Line 1
-e6c6836b,2026-02-10,metro,as,cn,Chongqing,Line 4 Min’andadao — Shimahelijiao (~10 km),10,,as/cn/chon/chongqing.htm,Line 4
+c4f4f30c,2026-01-11,metro,as,in,Ahmedabad,[2] Sachivalaya – Mahatma Mandir (5.4 km),5.4,,as/in/ahmedabad/ahmedabad.htm,Line 2
+ff8fd639,2026-01-16,metro,as,cn,Ningbo,[6] Gulin – Honglian (35.1 km),35.1,NEW LINE!,as/cn/ningbo/ningbo.htm,Line 6
+5c720c49,2026-01-18,metro,as,cn,Tianjin,[Z4] Beitang – Zhaishang (23.7 km),23.7,NEW LINE!,as/cn/tian/tianjin.htm,Line Z4
+65759d82,2026-01-28,s-bahn,as,cn,Guangzhou,[Guangzhou-Qingyuan Intercity] Huadu – Guangzhoubaiyun,,,as/cn/guan/guangzhou.htm,Guangzhou-Qingyuan Intercity
+60713e44,2026-02-02,s-bahn,,,Mexico City/Toluca,[El Insurgente] Santa Fe — Observatorio (8.5 km),8.5,,,El Insurgente
+87eb4dd6,2026-02-08,light-rail,,,Toronto,[5] Mount Dennis – Kennedy (19 km),19,NEW LINE!,,Line 5
+acb1977d,2026-02-09,metro,,,Belo Horizonte,[1] Eldorado — Novo Eldorado (1.5 km),1.5,,,Line 1
+e6c6836b,2026-02-10,metro,as,cn,Chongqing,[4] Min’andadao — Shimahelijiao (~10 km),10,,as/cn/chon/chongqing.htm,Line 4
 f0aea09c,2026-02-14,tram,eu,fr,Brest,Line B Gare Gambetta – Hôpital Cavale (5.1 km),5.1,,eu/fr/brest/brest.htm,
-6c5ec0d0,2026-02-14,tram,eu,fr,Brest,Line B Gares – Hôpital Cavale (5.1 km),5.1,,eu/fr/brest/brest.htm,
+6c5ec0d0,2026-02-14,tram,eu,fr,Brest,[B] Gares – Hôpital Cavale (5.1 km),5.1,,eu/fr/brest/brest.htm,B
 d210ff5a,2026-02-14,tram,eu,fr,Lyon,T6 Hôpitaux Est-Pinel – La Doua (5.4 km),5.4,,eu/fr/lyon/tram/lyon-tram.htm,T6
 136f1bfa,2026-02-22,s-bahn,as,in,Delhi,New Ashok Nagar – Sarai Kale Khan (5.3 km),5.3,,as/in/delhi/delhi.htm,
 929fa394,2026-02-22,s-bahn,as,in,Delhi,& Meerut South — Modipuram (23.6 km - as part of Meerut Metro,23.6,,as/in/delhi/delhi.htm,
-2a5023e8,2026-02-25,metro,,,Santo Domingo,Line 2 María Montez — Pablo Adón Guzmán (6.5 km),6.5,,,Line 2
+2a5023e8,2026-02-25,metro,,,Santo Domingo,[2] María Montez — Pablo Adón Guzmán (6.5 km),6.5,,,Line 2
 d3bb2665,2026-02-27,tram,eu,de,Munich,Line 14 Fürstenrieder Straße — Ammerseestraße (1.5 km),1.5,,eu/de/m/tram/muenchen-tram.htm,Line 14
-ed1d11a5,2026-02-28,tram,eu,de,Munich,Line 14 Fürstenrieder Straße — Ammerseestraße (1.5 km),1.5,,eu/de/m/tram/muenchen-tram.htm,Line 14
-10ce54d8,2026-03-08,metro,as,in,Delhi,Pink Line Majlis Park – Maujpur-Babarpur (12.3 km),12.3,,as/in/delhi/delhi.htm,Pink Line
-b995b772,2026-03-08,metro,as,in,Delhi,Magenta Line Majlis Park – Deepali Chowk (9.5 km),9.5,,as/in/delhi/delhi.htm,Magenta Line
-e11a6f46,2026-03-14,s-bahn,as,in,Chennai,MRTS Velachery — St Thomas Mount (4.5 km),4.5,,as/in/chen/chennai.htm,
-8f78f972,2026-03-20,monorail,,,Cairo,East Nile Monorail Cairo Stadium — New Capital (56.5 km - regular service since 6 May 2026),56.5,,,
+ed1d11a5,2026-02-28,tram,eu,de,Munich,[14] Fürstenrieder Straße — Ammerseestraße (1.5 km),1.5,,eu/de/m/tram/muenchen-tram.htm,Line 14
+10ce54d8,2026-03-08,metro,as,in,Delhi,[Pink Line] Majlis Park – Maujpur-Babarpur (12.3 km),12.3,,as/in/delhi/delhi.htm,Pink Line
+b995b772,2026-03-08,metro,as,in,Delhi,[Magenta Line] Majlis Park – Deepali Chowk (9.5 km),9.5,,as/in/delhi/delhi.htm,Magenta Line
+e11a6f46,2026-03-14,s-bahn,as,in,Chennai,[MRTS] Velachery — St Thomas Mount (4.5 km),4.5,,as/in/chen/chennai.htm,MRTS
+8f78f972,2026-03-20,monorail,,,Cairo,[East Nile Monorail] Cairo Stadium — New Capital (56.5 km - regular service since 6 May 2026),56.5,,,East Nile Monorail
 a5062a73,2026-03-28,s-bahn,eu,de,Berlin,S15 Wedding – Hauptbahnhof (2.2 km),2.2,,eu/de/b/tram/berlin-tram.htm,S15
-2f60aef6,2026-03-28,light-rail,,,Seattle,Line 2 International District/Chinatown — South Bellvue (12.8 km),12.8,,,Line 2
-8b2fb83f,2026-03-31,monorail,,,Sao Paulo,Line 17 Morumbi — Aeroporto de Congonhas (6 km; limited service),6,NEW LINE!,,Line 17
+2f60aef6,2026-03-28,light-rail,,,Seattle,[2] International District/Chinatown — South Bellvue (12.8 km),12.8,,,Line 2
+8b2fb83f,2026-03-31,monorail,,,Sao Paulo,[17] Morumbi — Aeroporto de Congonhas (6 km; limited service),6,NEW LINE!,,Line 17
 f3a578ea,2026-04-05,tram,eu,uk,Birmingham,Bull St/Corporation St — Millennium Point (0.5 km),0.5,,eu/uk/bir/birmingham.htm,
-ea398fee,2026-04-08,metro,as,in,Mumbai,Line 2B Diamond Garden — Mandale (5.4 km),5.4,,as/in/mumb/mumbai.htm,Line 2B
-87b7e23f,2026-04-08,metro,as,in,Mumbai,Line 9 Dahisar East — Kashigaon (3.6 km),3.6,,as/in/mumb/mumbai.htm,Line 9
-437d8ade,2026-04-18,tram,eu,cz,Prague,Lihovar — Dvorce/Kublov (0.5 km),0.5,,eu/cz/praha/praha-tram.htm,
-db797a9e,2026-04-22,s-bahn,as,cn,Nanjing,S2 Xishanqiao — Taibai (54.2 km),54.2,NEW LINE!,as/cn/nanj/nanjing.htm,S2
+ea398fee,2026-04-08,metro,as,in,Mumbai,[2B] Diamond Garden — Mandale (5.4 km),5.4,,as/in/mumb/mumbai.htm,Line 2B
+87b7e23f,2026-04-08,metro,as,in,Mumbai,[9] Dahisar East — Kashigaon (3.6 km),3.6,,as/in/mumb/mumbai.htm,Line 9
+437d8ade,2026-04-18,tram,eu,cz,Prague,[20·21] Lihovar — Dvorce/Kublov (0.5 km),0.5,,eu/cz/praha/praha-tram.htm,20·21
+db797a9e,2026-04-22,s-bahn,as,cn,Nanjing,[S2] Xishanqiao — Taibai (54.2 km),54.2,NEW LINE!,as/cn/nanj/nanjing.htm,S2
 77378f52,2026-04-26,s-bahn,as,cn,Jinhua,Lingyun — Yiwu Railway Station (3.6 km),3.6,,as/cn/jinhua/jinhua.htm,
-7793730c,2026-05-01,metro,as,cn,Wuhan,Line 12 Gangduhuayuan — Moshuihu Park (35.3 km),35.3,NEW LINE!,as/cn/wuhan/wuhan.htm,Line 12
-bee5e73d,2026-05-08,metro,,,Los Angeles,Line D Wilshire/Western — Wilshire/La Cienega (6.2 km),6.2,,,
-bcd10fd3,2026-05-16,metro,as,kz,Astana,Nurly Zhol — Airport (21.3 km),21.3,NEW METRO!,as/kz/astana/astana.htm,
+7793730c,2026-05-01,metro,as,cn,Wuhan,[12] Gangduhuayuan — Moshuihu Park (35.3 km),35.3,NEW LINE!,as/cn/wuhan/wuhan.htm,Line 12
+bee5e73d,2026-05-08,metro,,,Los Angeles,[D] Wilshire/Western — Wilshire/La Cienega (6.2 km),6.2,,,D
+bcd10fd3,2026-05-16,metro,as,kz,Astana,[M] Nurly Zhol — Airport (21.3 km),21.3,NEW METRO!,as/kz/astana/astana.htm,M
 a4ef64e2,2026-05-18,tram,,,Kansas City,River Market North — Riverfront (1.2 km),1.2,,,
-50940344,2026-05-18,metro,,,Montreal,REM Bois Franc – Anse à l'Orme (8.6 km),8.6,,,REM
-53679bba,2026-05-22,metro,as,tr,Istanbul,M5 Samandira Merkez — Sultanbeyli (4.4 km),4.4,,as/tr/istanbul/istanbul.htm,M5
-dd60dabf,2026-06-01,tram,eu,lv,Riga,Line 7/14 Eglaines iela/Dole (ex Kengarags) — Kengarags (1.8 km),1.8,,eu/lv/riga/riga.htm,Line 7
-3842e14a,2026-06-15,s-bahn,eu,de,Berlin,S15 Wedding — Hauptbahnhof (2.1 km),2.1,,eu/de/b/s-berlin.htm,S15
-781ac263,2026-06-18,metro,as,cn,Foshan,Line 3 Lianhe — Zhongshan Park (4 km),4,,as/cn/guan/foshan.htm,Line 3
-a2c8bef7,2026-06-19,s-bahn,as,tr,Istanbul,M11 Arnavutköy Hastane — Halkali (21.7 km),21.7,,as/tr/istanbul/istanbul.htm,M11
-046bc07b,2026-06-28,metro,as,cn,Shenzhen,Line 13 Shangwu — Lisonglang (19.3 km),19.3,,as/cn/shen/shenzhen.htm,Line 13
-146d6a35,2026-06-29,metro,as,my,Kuala Lumpur,Line 11 Bandar Utama — Johan Setia (37.8 km),37.8,NEW LINE!,as/my/kual/kuala-lumpur.htm,Line 11
-a8c52d1b,2026-06-30,monorail,,,Sao Paulo,Line 17 Brooklin Paulista — Washington Luís (0.5 km; limited service),0.5,,,Line 17
-e54ba281,2026-06-30,metro,as,cn,Shenyang,Line 3 Nan Liguan — Fangjialan (14 km),14,,as/cn/shny/shenyang.htm,Line 3
-791f5769,2026-06-30,metro,as,tw,Taipei,Sanying Line Yingtao Fude — Dingpu (13.8 km),13.8,NEW LINE!,as/tw/taip/taipei.htm,Sanying Line
-90cd60c8,2026-06-30,metro,as,cn,Xi'an,Line 5 Yanminghu — Xi'andongzhan (1.8 km),1.8,,as/cn/xian/xian.htm,Line 5
-90483b89,2026-07-01,metro,as,cn,Hefei,Line 7 Feicui Gongyuan — Sheng Wenhuahefeiyiguan,,NEW LINE!,as/cn/hefei/hefei.htm,Line 7
-c538e186,2026-07-02,metro,as,in,Patna,BL Bhootnath — Malahi Pakri,,,as/in/patna/patna.htm,BL
-4a398525,2026-07-02,metro,,,Sao Paulo,Line 6 João Paulo I — Perdizes,,NEW LINE!,,Line 6
-5e574c66,2026-07-03,metro,,,Belo Horizonte,Linha 2 Nova Suíça — Amazonas  (limited service),,NEW LINE!,,Line 2
-4cd279e4,2026-07-12,metro,,,Singapore,Circle Line Harbour Front — Marina Bay,,,,Circle Line
-2af88c45,2026-07-18,s-bahn,eu,es,Donostia/San Sebastián,Altza — Galtzaraborda (2.1 km),2.1,,eu/es/doss/donostia.htm,
-4be7dadc,2026-07-31,s-bahn,as,cn,Guangzhou,Guangzhou-Shenzhen Intercity Zhuliao – Xintang South (48.2 km),48.2,,as/cn/guan/guangzhou.htm,
-2234ac5f,2026-08-09,tram,,,Gold Coast,Broadbeach South — Burleigh Heads (6.8 km),6.8,,,
-85fc36f7,2026-08-10,tram,eu,de,Mainz,Hauptbahnhof West — Münsterplatz (0.3 km),0.3,,eu/de/mz/mainz.htm,
-b8a36dd6,2026-08-13,metro,as,in,Mumbai,Line 2B Diamond Garden – Chembur (1 km),1,,as/in/mumb/mumbai.htm,Line 2B
-0cdb4254,2026-08-14,metro,eu,bg,Sofia,M3 Hadzhi Dimitar — Gen. Vladimir Vazov (3.2 km),3.2,,eu/bg/sofia/sofia.htm,M3
-d0c60764,2026-08-21,tram,as,il,Jerusalem,L3 HaTurim — Malha Menachat (7 km),7,,as/il/jeru/jerusalem.htm,Line 3
-9052e41c,2026-08-22,tram,eu,dk,Copenhagen,Letbane Rødovre Nord — Lundtofte (13.9 km),13.9,,eu/dk/kobenhavn/kobenhavn.htm,
-dc0da961,2026-08-26,metro,as,cn,Changchun,Line 7 Qiche Gongyuan — Donghuanchenglu (23.2 km),23.2,NEW LINE!,as/cn/chan/changchun.htm,Line 7
-9a257bad,2026-08-27,metro,eu,gr,Thessaloniki,L2 25 Martiou — Micra (4.8 km),4.8,,eu/gr/thessaloniki/thessaloniki.htm,Line 2
+50940344,2026-05-18,metro,,,Montreal,[REM] Bois Franc – Anse à l'Orme (8.6 km),8.6,,,REM
+53679bba,2026-05-22,metro,as,tr,Istanbul,[M5] Samandira Merkez — Sultanbeyli (4.4 km),4.4,,as/tr/istanbul/istanbul.htm,M5
+dd60dabf,2026-06-01,tram,eu,lv,Riga,[7·14] Eglaines iela/Dole (ex Kengarags) — Kengarags (1.8 km),1.8,,eu/lv/riga/riga.htm,Line 7
+3842e14a,2026-06-15,s-bahn,eu,de,Berlin,[S15] Wedding — Hauptbahnhof (2.1 km),2.1,,eu/de/b/s-berlin.htm,S15
+781ac263,2026-06-18,metro,as,cn,Foshan,[3] Lianhe — Zhongshan Park (4 km),4,,as/cn/guan/foshan.htm,Line 3
+a2c8bef7,2026-06-19,s-bahn,as,tr,Istanbul,[M11] Arnavutköy Hastane — Halkali (21.7 km),21.7,,as/tr/istanbul/istanbul.htm,M11
+046bc07b,2026-06-28,metro,as,cn,Shenzhen,[13] Shangwu — Lisonglang (19.3 km),19.3,,as/cn/shen/shenzhen.htm,Line 13
+146d6a35,2026-06-29,metro,as,my,Kuala Lumpur,[11] Bandar Utama — Johan Setia (37.8 km),37.8,NEW LINE!,as/my/kual/kuala-lumpur.htm,Line 11
+a8c52d1b,2026-06-30,monorail,,,Sao Paulo,[17] Brooklin Paulista — Washington Luís (0.5 km; limited service),0.5,,,Line 17
+e54ba281,2026-06-30,metro,as,cn,Shenyang,[3] Nan Liguan — Fangjialan (14 km),14,,as/cn/shny/shenyang.htm,Line 3
+791f5769,2026-06-30,metro,as,tw,Taipei,[Sanying Line] Yingtao Fude — Dingpu (13.8 km),13.8,NEW LINE!,as/tw/taip/taipei.htm,Sanying Line
+90cd60c8,2026-06-30,metro,as,cn,Xi'an,[5] Yanminghu — Xi'andongzhan (1.8 km),1.8,,as/cn/xian/xian.htm,Line 5
+90483b89,2026-07-01,metro,as,cn,Hefei,[7] Feicui Gongyuan — Sheng Wenhuahefeiyiguan,,NEW LINE!,as/cn/hefei/hefei.htm,Line 7
+c538e186,2026-07-02,metro,as,in,Patna,[BL] Bhootnath — Malahi Pakri,,,as/in/patna/patna.htm,BL
+4a398525,2026-07-02,metro,,,Sao Paulo,[6] João Paulo I — Perdizes,,NEW LINE!,,Line 6
+5e574c66,2026-07-03,metro,,,Belo Horizonte,[2] Nova Suíça — Amazonas  (limited service),,NEW LINE!,,Line 2
+4cd279e4,2026-07-12,metro,,,Singapore,[CL] Harbour Front — Marina Bay,,,,Circle Line
+2af88c45,2026-07-18,s-bahn,eu,es,Donostia/San Sebastián,[E2] Altza — Galtzaraborda (2.1 km),2.1,,eu/es/doss/donostia.htm,E2
+4be7dadc,2026-07-31,s-bahn,as,cn,Guangzhou,[Guangzhou-Shenzhen Intercity] Zhuliao – Xintang South (48.2 km),48.2,,as/cn/guan/guangzhou.htm,Guangzhou-Shenzhen Intercity
+2234ac5f,2026-08-09,tram,,,Gold Coast,[L1] Broadbeach South — Burleigh Heads (6.8 km),6.8,,,Line 1
+85fc36f7,2026-08-10,tram,eu,de,Mainz,[53] Hauptbahnhof West — Münsterplatz (0.3 km),0.3,,eu/de/mz/mainz.htm,Line 53
+b8a36dd6,2026-08-13,metro,as,in,Mumbai,[2B] Diamond Garden – Chembur (1 km),1,,as/in/mumb/mumbai.htm,Line 2B
+0cdb4254,2026-08-14,metro,eu,bg,Sofia,[M3] Hadzhi Dimitar — Gen. Vladimir Vazov (3.2 km),3.2,,eu/bg/sofia/sofia.htm,M3
+d0c60764,2026-08-21,tram,as,il,Jerusalem,[L3] HaTurim — Malha Menachat (7 km),7,,as/il/jeru/jerusalem.htm,Line 3
+9052e41c,2026-08-22,tram,eu,dk,Copenhagen,[L] Rødovre Nord — Lundtofte (13.9 km),13.9,,eu/dk/kobenhavn/kobenhavn.htm,L
+dc0da961,2026-08-26,metro,as,cn,Changchun,[7] Qiche Gongyuan — Donghuanchenglu (23.2 km),23.2,NEW LINE!,as/cn/chan/changchun.htm,Line 7
+9a257bad,2026-08-27,metro,eu,gr,Thessaloniki,[2] 25 Martiou — Micra (4.8 km),4.8,,eu/gr/thessaloniki/thessaloniki.htm,Line 2
 854377b8,2026-08-30,tram,,,Salvador,Calçada — São Joaquim (0.7 km),0.7,,,
-f9444c94,2026-08-30,metro,as,tw,Taipei,Red Line Xiangshan — Guangci/Fengtian Temple (1.4 km),1.4,,as/tw/taip/taipei.htm,Red Line
+f9444c94,2026-08-30,metro,as,tw,Taipei,[RL] Xiangshan — Guangci/Fengtian Temple (1.4 km),1.4,,as/tw/taip/taipei.htm,Red Line
 faef3529,2026-08-31,tram,eu,nl,Amsterdam,[26] Theo van Goghpark (ex IJburg) — IJburg Franz Kafkastraat (1.6 km),1.6,,eu/nl/ams/tram/amsterdam-tram.htm,Line 26
 dd1b7e85,2026-09-04,metro,as,cn,Changsha,[2] West Meixi Lake — Longhuling (11 km),11,,as/cn/changsha/changsha.htm,Line 2
-3a06efb7,2026-09-04,light-rail,eu,de,Düsseldorf,[U80/81] Freiligrathplatz — Flughafen Terminal (1.8 km),1.8,,eu/de/d/duesseldorf.htm,U80/81
+3a06efb7,2026-09-04,light-rail,eu,de,Düsseldorf,[U80·81] Freiligrathplatz — Flughafen Terminal (1.8 km),1.8,,eu/de/d/duesseldorf.htm,U80/81
 4f5db9de,2026-09-05,metro,eu,ru,Moscow,[17] (Delovoy Tsentr — ) Shelepikha — Bul. Generala Karbysheva (~5.2 km),5.2,NEW LINE!,eu/ru/mos/moskva.htm,Line 17
 63bf74e8,2026-09-05,tram,eu,at,Vienna,[18] Schlachthausgasse — Stadion U/Handelskai (2.2 km),2.2,,eu/at/vienna/tram/wien-tram.htm,Line 18
-df9a2b02,2026-09-06,metro,as,in,Indore,Yellow Line Veerangana Jhalkari Bai — Malviya Nagar Chowraha (Radisson Sq) (11.2 km),11.2,,as/in/indore/indore.htm,Yellow Line
+df9a2b02,2026-09-06,metro,as,in,Indore,[Yellow Line] Veerangana Jhalkari Bai — Malviya Nagar Chowraha (Radisson Sq) (11.2 km),11.2,,as/in/indore/indore.htm,Yellow Line
 1cfd5236,2026-09-09,tram,as,tr,Konya,[2] Adliye — Sehir Hastanesi (1.4 km),1.4,,as/tr/konya/konya.htm,Line 2
-074e3a6d,2026-09-13,s-bahn,,,Auckland,City Rail Link Waitemata — Maungawhau (3.5 km),3.5,,,
+074e3a6d,2026-09-13,s-bahn,,,Auckland,[City Rail Link] Waitemata — Maungawhau (3.5 km),3.5,,,City Rail Link
 9e099de6,2026-09-15,tram,as,tr,Izmit,Kocaeli Stadyum — Kartepe (1.4 km),1.4,,as/tr/izmit/izmit.htm,
-ab1b50b4,2026-09-16,metro,as,id,Jakarta,LRT Velodrome — Manggarai (6.0 km),6.0,,as/id/jaka/jakarta.htm,LRT
+ab1b50b4,2026-09-16,metro,as,id,Jakarta,[LRT] Velodrome — Manggarai (6.0 km),6.0,,as/id/jaka/jakarta.htm,LRT
 86bd8f14,2026-09-16,metro,as,cn,Xiamen,[6] Jiaojiang Road — Huaqiao University,,NEW LINE!,as/cn/xiamen/xiamen.htm,Line 6
 35adaf57,2026-09-16,metro,as,cn,Xiamen,[4] Jimei Software Park North — Qianwu,,NEW LINE!,as/cn/xiamen/xiamen.htm,Line 4
 5ec5aecf,2026-09-22,s-bahn,as,cn,Ningbo,[12] Xiaoyangjiang — Damuwan (61.5 km),61.5,NEW LINE!,as/cn/ningbo/ningbo.htm,Line 12
@@ -1995,6 +1995,8 @@ ab1b50b4,2026-09-16,metro,as,id,Jakarta,LRT Velodrome — Manggarai (6.0 km),6.0
 f52463aa,2026-09-26,tram,eu,pl,Kraków,[9·12 · 16] TAURON Arena Kraków — Mistrzejowice (4.3 km),4.3,,eu/pl/kra/krakow.htm,9·12 · 16
 58c6287a,2026-09-27,tram,eu,ba,Sarajevo,[11] Ilidza — Hrasnica (6.2 km),6.2,,eu/ba/sarajevo/sarajevo.htm,Line 11
 77e33fd8,2026-09-28,metro,as,cn,Changchun,[5] Zhuoyue Dajie — Dongdaqiao (19.5 km),19.5,NEW LINE!,as/cn/chan/changchun.htm,Line 5
-c6443b05,2026-09-28,s-bahn,,,Dakar,TER Diamniadio — Aéroport International Blaise Diagne (19 km),19,,,TER
+c6443b05,2026-09-28,s-bahn,,,Dakar,[TER] Diamniadio — Aéroport International Blaise Diagne (19 km),19,,,TER
 e3e8ed1c,2026-09-29,metro,as,cn,Nanjing,[6] Qixiashan — Nanjing South Railway Station (32.4 km),32.4,NEW LINE!,as/cn/nanj/nanjing.htm,Line 6
-84591c42,2026-10-05,tram,eu,nl,The Hague/Delft,Line 19 Delft Station — TU Delft Schoemakerstraat (2.5 km),2.5,,eu/nl/dhg/den-haag.htm,Line 19
+84591c42,2026-10-05,tram,eu,nl,The Hague/Delft,[19] Delft Station — TU Delft Schoemakerstraat (2.5 km),2.5,,eu/nl/dhg/den-haag.htm,Line 19
+271a0379,2026-10-11,metro,as,in,Chennai,[Yellow Line] Poonamallee Bypass — Vadapalani (14.6 km),14.6,NEW LINE!,as/in/chen/chennai.htm,Yellow Line
+052165d9,2026-10-17,tram,eu,ch,Geneva,[17] Annemasse Parc Montessuit — Annemasse Perrier-Aubrac (1.3 km),1.3,,eu/ch/ge/geneve.htm,Line 17

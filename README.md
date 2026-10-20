@@ -75,7 +75,7 @@ Lines converted to UTO long after opening, such as Guangzhou Line 7
 
 ![Share of new metro lines that are automated, by year](charts/automated_share_by_year_2016_to_2026.svg)
 
-Of the **361 new lines** opened from 2016-01-01 through 2026-09-29
+Of the **362 new lines** opened from 2016-01-01 through 2026-10-17
 that are new-build, fully grade-separated, and not mainline,
 **135 (37%) are automated** above GoA2.
 They're listed in [`data/metro_like_openings.csv`](data/metro_like_openings.csv)
@@ -83,17 +83,17 @@ and [`data/automated_metro_like_openings.csv`](data/automated_metro_like_opening
 
 - **The share has risen sharply.**
   It was 19% (32 of 168) for lines opened in 2016–2020,
-  53% (103 of 193) in 2021–2026,
-  and 65% (55 of 85) in 2024–2026.
+  53% (103 of 194) in 2021–2026,
+  and 64% (55 of 86) in 2024–2026.
 - **China drove the rise.**
-  China opened 234 of the 361 lines.
+  China opened 234 of the 362 lines.
   Its automated share went from 6% (6 of 107) in 2016–2020
   to 65% (33 of 51) in 2024–2026,
   as fully automated operation became the default for new Chinese metro lines.
 - **Elsewhere the share has been steadier and higher.**
-  Outside China, 51% of new lines (65 of 127) are automated,
+  Outside China, 51% of new lines (65 of 128) are automated,
   and 56% (53 of 94) excluding India.
-  In India, 12 of 33 new lines (36%) are automated:
+  In India, 12 of 34 new lines (35%) are automated:
   Delhi's Magenta and Pink lines at GoA4,
   and ten lines at GoA2.5.
 - Almost all of the rest are GoA4;
@@ -111,7 +111,7 @@ in which 121 of 340 new lines (36%) are automated worldwide.
 Every chart also has a km version (`automated_km_share_*`),
 counting the km of every grade-separated, non-mainline opening,
 new lines and extensions alike, each extension taking its line's GoA:
-3,385 of 11,583 km (29%) opened in 2016–2026 are automated worldwide,
+3,385 of 11,597 km (29%) opened in 2016–2026 are automated worldwide,
 23% in mainland China and 45% elsewhere.
 The km share is lower than the line share because extensions,
 mostly of older lines built before automation was common, add many non-automated km.
@@ -122,7 +122,7 @@ named like the charts.
 
 ### Caveats
 
-- **2026 is a partial year,** through UrbanRail.net's last entry (2026-09-29),
+- **2026 is a partial year,** through UrbanRail.net's last entry (2026-10-17),
   and is skewed toward lines opened outside China.
   Chinese cities rush to open lines before the year ends,
   so 25–64% of each year's new Chinese lines open in December;
