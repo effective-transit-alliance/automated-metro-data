@@ -22,7 +22,6 @@ A line counts if it is new-build, fully grade-separated, and not mainline.
 
 import csv
 from collections import Counter
-from datetime import date
 from html import escape
 from pathlib import Path
 
@@ -85,6 +84,11 @@ def tally(in_region, last_year, by_km):
     return [(y, total[y], automated[y]) for y in years], last_date, unknown_km
 
 
+def latest_opening():
+    with open(OPENINGS, newline="") as f:
+        return max(r["opening_date"] for r in csv.DictReader(f))
+
+
 def write_table(rows, table, unit):
     with open(table, "w", newline="") as f:
         w = csv.writer(f)
@@ -116,8 +120,8 @@ def write_svg(rows, last_date, svg, region, unit, unknown_km):
     a_all = sum(a for _, _, a in rows)
     first_year = rows[0][0]
     last_year = rows[-1][0]
-    # Only the current year can be incomplete.
-    partial_year = str(date.today().year)
+    # Only the year of the latest opening of any kind can be incomplete.
+    partial_year = latest_opening()[:4]
 
     def y_of(share):
         return TOP + plot_h * (1 - share)
