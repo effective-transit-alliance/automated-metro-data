@@ -1,0 +1,286 @@
+GoA,country,system,line,date,since
+GoA3,Brazil,Salvador Metro,Line 1,2014,2014
+GoA3,Brazil,Salvador Metro,Line 2,2016,2016
+GoA3,Brazil,São Paulo Metro,Line 3 (Red),2009+,2009
+GoA3,United States,Walt Disney World Monorail System,,2016,2016
+GoA3,China (Mainland),Beijing Subway,Capital Airport Express,19 July 2008,2008-07-19
+GoA3,China (Mainland),Fuzhou Metro,Line 4,27 August 2023,2023-08-27
+GoA3,China (Mainland),Ningbo Rail Transit,Line 7,1 December 2024,2024-12-01
+GoA3,China (Mainland),Ningbo Rail Transit,Line 12,22 September 2026,2026-09-22
+GoA3,China (Mainland),Shanghai Pudong Airport APM,,16 September 2019,2019-09-16
+GoA3,China (Mainland),Shanghai Metro,Line 2,Around 2025,2025
+GoA3,China (Mainland),Shanghai Metro,Line 5,June 2018,2018-06
+GoA3,China (Mainland),Shanghai Metro,Line 17,30 December 2017,2017-12-30
+GoA3,China (Mainland),Wuhan Metro,Yangluo line,26 December 2017,2017-12-26
+GoA3,Indonesia,Soekarno–Hatta Airport Skytrain,,2020,2020
+GoA3,Japan,Disney Resort Line,,27 July 2001,2001-07-27
+GoA3,Pakistan,Lahore Metro,Orange Line,25 October 2020,2020-10-25
+GoA3,Singapore,Sentosa Express,,November 2017,2017-11
+GoA3,Czech Republic,,Dolní Bousov–Kopidlno railway line,2025,2025
+GoA3,Russia,Trams in Moscow,Tram line 10,2025,2025
+GoA3,Spain,Barcelona Metro,Line 11,2009,2009
+GoA3,United Kingdom,Docklands Light Railway,,31 August 1987,1987-08-31
+GoA4,Brazil,Porto Alegre Metro,Metro-Airport Connection,10 August 2013,2013-08-10
+GoA4,Brazil,São Paulo Metro,Line 1 (Blue),3 July 2022,2022-07-03
+GoA4,Brazil,São Paulo Metro,Line 2 (Green),2 March 2020,2020-03-02
+GoA4,Brazil,São Paulo Metro,Line 3 (Red),December 2022 (Under Conversion),2022-12
+GoA4,Brazil,São Paulo Metro,Line 4 (Yellow),25 May 2010,2010-05-25
+GoA4,Brazil,São Paulo Metro,Line 5 (Lilac),12 March 2017,2017-03-12
+GoA4,Brazil,São Paulo Metro,Line 15 (Silver),30 August 2014,2014-08-30
+GoA4,Brazil,São Paulo Metro,Line 17 (Gold),31 March 2026,2026-03-31
+GoA4,Canada,Terminal Link,,6 July 2006,2006-07-06
+GoA4,Canada,SkyTrain (Vancouver),Expo Line,11 December 1985,1985-12-11
+GoA4,Canada,SkyTrain (Vancouver),Millennium Line,7 January 2002,2002-01-07
+GoA4,Canada,SkyTrain (Vancouver),Canada Line,17 August 2009,2009-08-17
+GoA4,Canada,REM (Réseau Express Metropolitain),,31 July 2023 (Partially opened; rest of the line under construction),2023-07-31
+GoA4,Chile,Santiago Metro,Line 3,22 January 2019,2019-01-22
+GoA4,Chile,Santiago Metro,Line 6,2 November 2017,2017-11-02
+GoA4,Mexico,Aerotrén,,2007,2007
+GoA4,Peru,Lima Metro,Line 2,21 December 2023,2023-12-21
+GoA4,United States,AeroTrain,,20 January 2010,2010-01-20
+GoA4,United States,Airport Transit System,,6 May 1993,1993-05-06
+GoA4,United States,AirTrain JFK,,17 December 2003,2003-12-17
+GoA4,United States,AirTrain Newark,,31 May 1996,1996-05-31
+GoA4,United States,AirTrain SFO,,24 February 2003,2003-02-24
+GoA4,United States,Aria Express,,1 December 2009,2009-12-01
+GoA4,United States,Bay Area Rapid Transit,Oakland Airport Connector,22 November 2014,2014-11-22
+GoA4,United States,Cincinnati Airport People Mover,,9 June 1994,1994-06-09
+GoA4,United States,Detroit People Mover,,31 July 1987,1987-07-31
+GoA4,United States,DFW Skylink,,21 May 2005,2005-05-21
+GoA4,United States,DIA Automated Guideway Transit System,,28 February 1995,1995-02-28
+GoA4,United States,ExpressTram,,24 February 2002,2002-02-24
+GoA4,United States,George Bush Intercontinental Airport People Movers,Skyway,24 May 1999,1999-05-24
+GoA4,United States,George Bush Intercontinental Airport People Movers,Subway,1969,1969
+GoA4,United States,Getty Center Tram,,1997,1997
+GoA4,United States,Hartsfield–Jackson Atlanta International Airport People Movers,The Plane Train,21 September 1980,1980-09-21
+GoA4,United States,Hartsfield–Jackson Atlanta International Airport People Movers,ATL Skytrain,8 December 2009,2009-12-08
+GoA4,United States,Skyline (Honolulu),,30 June 2023,2023-06-30
+GoA4,United States,Huntsville Hospital Tram System,,19 June 2002,2002-06-19
+GoA4,United States,Jacksonville Skyway,,1989,1989
+GoA4,United States,Las Vegas Monorail,,2004,2004
+GoA4,United States,Mandalay Bay Tram,,9 April 1999,1999-04-09
+GoA4,United States,Harry Reid International Airport Automated People Movers,Green Line,1985,1985
+GoA4,United States,Harry Reid International Airport Automated People Movers,Blue Line,1998,1998
+GoA4,United States,Harry Reid International Airport Automated People Movers,Red Line,2012,2012
+GoA4,United States,Memphis Suspension Railway,,1982,1982
+GoA4,United States,Miami International Airport People Movers,MIA e Train,1980,1980
+GoA4,United States,Miami International Airport People Movers,Skytrain,15 September 2010,2010-09-15
+GoA4,United States,Miami International Airport People Movers,MIA Mover,9 September 2011,2011-09-09
+GoA4,United States,Miami Metromover,,17 April 1986,1986-04-17
+GoA4,United States,Minneapolis–St. Paul Airport Trams,Hub Tram,3 April 2001,2001-04-03
+GoA4,United States,Minneapolis–St. Paul Airport Trams,'C' Concourse People Mover,5 May 2004,2004-05-05
+GoA4,United States,Morgantown Personal Rapid Transit,,1975,1975
+GoA4,United States,Orlando International Airport People Movers,Airside systems,1981,1981
+GoA4,United States,Orlando International Airport People Movers,Intermodal Terminal system,2017,2017
+GoA4,United States,PHX Sky Train,,8 April 2013,2013-04-08
+GoA4,United States,Pittsburgh International Airport People Mover,,1 October 1992,1992-10-01
+GoA4,United States,Satellite Transit System,,1973,1973
+GoA4,United States,SMF Automated People Mover,,6 October 2011,2011-10-06
+GoA4,United States,Tampa International Airport People Movers,Airside systems,1971,1971
+GoA4,United States,Tampa International Airport People Movers,Monorail,1991,1991
+GoA4,United States,Tampa International Airport People Movers,SkyConnect,2018,2018
+GoA4,United States,Navajo Mine Railroad,,,
+GoA4,Venezuela,Cabletren Bolivariano,,14 August 2013,2013-08-14
+GoA4,China (Mainland),Beijing Capital International Airport Terminal 3 People Mover,,March 2008,2008-03
+GoA4,China (Mainland),Beijing Subway,Line 3,15 December 2024,2024-12-15
+GoA4,China (Mainland),Beijing Subway,Line 11,31 December 2021,2021-12-31
+GoA4,China (Mainland),Beijing Subway,Line 12,15 December 2024,2024-12-15
+GoA4,China (Mainland),Beijing Subway,Line 17,31 December 2021,2021-12-31
+GoA4,China (Mainland),Beijing Subway,Line 19,31 December 2021,2021-12-31
+GoA4,China (Mainland),Beijing Subway,Yanfang line,30 December 2017,2017-12-30
+GoA4,China (Mainland),Beijing Subway,Daxing Airport Express,26 September 2019,2019-09-26
+GoA4,China (Mainland),Chengdu Metro,Line 9,18 December 2020,2020-12-18
+GoA4,China (Mainland),Chengdu Metro,Line 27,19 December 2024,2024-12-19
+GoA4,China (Mainland),Chengdu Tianfu Airport Automated People Mover,,2021,2021
+GoA4,China (Mainland),Chongqing Rail Transit,Bishan rubber-tyred tram,16 April 2021,2021-04-16
+GoA4,China (Mainland),Chongqing Jiangbei International Airport Monorail Rapid Transit System,,"April 9, 2025",2025
+GoA4,China (Mainland),Jinan Metro,Line 2,26 March 2021,2021-03-26
+GoA4,China (Mainland),Jinan Metro,Line 4,27 December 2025,2025-12-27
+GoA4,China (Mainland),Jinan Metro,Line 8,27 December 2025,2025-12-27
+GoA4,China (Mainland),Jinan Metro,Line 6,27 December 2025,2025-12-27
+GoA4,China (Mainland),Guangzhou Metro,Line 10,29 June 2025,2025-06-29
+GoA4,China (Mainland),Guangzhou Metro,Line 11,28 December 2024,2024-12-28
+GoA4,China (Mainland),Guangzhou Metro,Line 12,29 June 2025,2025-06-29
+GoA4,China (Mainland),Guangzhou Metro,APM Line,8 November 2010,2010-11-08
+GoA4,China (Mainland),Nanjing Metro,Line 7,28 December 2022,2022-12-28
+GoA4,China (Mainland),Nanning Metro,Line 5,16 December 2021,2021-12-16
+GoA4,China (Mainland),Ningbo Rail Transit,Line 5,28 December 2021,2021-12-28
+GoA4,China (Mainland),Ningbo Rail Transit,Line 6,16 January 2026,2026-01-16
+GoA4,China (Mainland),Ningbo Rail Transit,Line 7,29 August 2025,2025-08-29
+GoA4,China (Mainland),Ningbo Rail Transit,Line 8,30 June 2025,2025-06-30
+GoA4,China (Mainland),Qingdao Metro,Line 6,26 April 2024,2024-04-26
+GoA4,China (Mainland),Shanghai Metro,Line 10,10 April 2010,2010-04-10
+GoA4,China (Mainland),Shanghai Metro,Line 14,30 December 2021,2021-12-30
+GoA4,China (Mainland),Shanghai Metro,Line 15,23 January 2021,2021-01-23
+GoA4,China (Mainland),Shanghai Metro,Line 18,26 December 2020,2020-12-26
+GoA4,China (Mainland),Shanghai Metro,Pujiang line,31 March 2018,2018-03-31
+GoA4,China (Mainland),Shaoxing Metro,Line 2,26 July 2023,2023-07-26
+GoA4,China (Mainland),Shenzhen Metro,Line 6 Branch,28 November 2022,2022-11-28
+GoA4,China (Mainland),Shenzhen Metro,Line 12,28 November 2022,2022-11-28
+GoA4,China (Mainland),Shenzhen Metro,Line 13,28 December 2024,2024-12-28
+GoA4,China (Mainland),Shenzhen Metro,Line 14,28 October 2022,2022-10-28
+GoA4,China (Mainland),Shenzhen Metro,Line 16,28 December 2022,2022-12-28
+GoA4,China (Mainland),Shenzhen Metro,Line 20,28 December 2021,2021-12-28
+GoA4,China (Mainland),Shenzhen Baoan International Airport Automated People Mover,,December 2021,2021-12
+GoA4,China (Mainland),Shenzhen Pingshan SkyShuttle Line 1,,28 December 2022,2022-12-28
+GoA4,China (Mainland),Suzhou Metro,Line 5,29 June 2021,2021-06-29
+GoA4,China (Mainland),Suzhou Metro,Line 6,29 June 2024,2024-06-29
+GoA4,China (Mainland),Suzhou Metro,Line 8,10 September 2024,2024-09-10
+GoA4,China (Mainland),Suzhou Metro,Line 11,24 June 2023,2023-06-24
+GoA4,China (Mainland),Taiyuan Metro,Line 2,26 December 2020,2020-12-26
+GoA4,China (Mainland),Tianjin Metro,Line 7,28 September 2025,2025-09-28
+GoA4,China (Mainland),Tianjin Metro,Line 8,28 December 2021,2021-12-28
+GoA4,China (Mainland),Tianjin Metro,Line 10,18 November 2022,2022-11-18
+GoA4,China (Mainland),Tianjin Metro,Line 11,28 December 2023,2023-12-28
+GoA4,China (Mainland),Tianjin Metro,Line Z4,18 January 2026,2026-01-18
+GoA4,China (Mainland),Wuhan Metro,Line 5,26 December 2021,2021-12-26
+GoA4,China (Mainland),Wuhan Metro,Line 12,1 May 2026,2026-05-01
+GoA4,China (Mainland),Wuhan Metro,Line 19,30 December 2023,2023-12-30
+GoA4,China (Mainland),Wuhu Rail Transit,Line 1,3 November 2021,2021-11-03
+GoA4,China (Mainland),Wuhu Rail Transit,Line 2,28 December 2021,2021-12-28
+GoA4,China (Mainland),Xi'an Metro,Line 8,26 December 2024,2024-12-26
+GoA4,China (Mainland),Xi'an Metro,Line 10,26 December 2024,2024-12-26
+GoA4,China (Mainland),Xi'an Metro,Line 16,27 June 2023,2023-06-27
+GoA4,China (Mainland),Xi'an Qujiang Sightseeing Monorail,,16 January 2015 (closed March 2015 ) 1 May 2023 (re-opening),2015-01-16
+GoA4,China (Mainland),Xiamen Metro,Line 4,16 September 2026,2026-09-16
+GoA4,China (Mainland),Xiamen Metro,Line 6,16 September 2026,2026-09-16
+GoA4,China (Mainland),Zhengzhou Metro,Line 10,28 September 2023,2023-09-28
+GoA4,China (Mainland),Zhengzhou Metro,Line 12,20 December 2023,2023-12-20
+GoA4,China (Mainland),Zhengzhou Metro,Zhengxu line,28 December 2023,2023-12-28
+GoA4,Egypt,Cairo Monorail,East Nile Line,6 May 2026,2026-05-06
+GoA4,Hong Kong,Hong Kong International Airport Automated People Mover,,6 July 1998,1998-07-06
+GoA4,Hong Kong,MTR,Disneyland Resort line,1 August 2005,2005-08-01
+GoA4,Hong Kong,MTR,South Island line (East),28 December 2016,2016-12-28
+GoA4,India,Delhi Metro,Pink Line,14 March 2018,2018-03-14
+GoA4,India,Delhi Metro,Magenta Line,25 December 2017,2017-12-25
+GoA4,India,Delhi Metro,Grey Line,4 October 2019,2019-10-04
+GoA4,India,Mumbai Metro,Line 2,2 April 2022,2022-04-02
+GoA4,India,Mumbai Metro,Line 3,5 October 2024,2024-10-05
+GoA4,India,Mumbai Metro,Line 7,2 April 2022,2022-04-02
+GoA4,India,Navi Mumbai Metro,Line 1,21 December 2023,2023-12-21
+GoA4,India,Namma Metro,Yellow Line,10 August 2025,2025-08-10
+GoA4,Indonesia,Jabodebek LRT,Bekasi Line,28 August 2023,2023-08-28
+GoA4,Indonesia,Jabodebek LRT,Cibubur Line,28 August 2023,2023-08-28
+GoA4,Japan,Kanazawa Seaside Line,,5 July 1989,1989-07-05
+GoA4,Japan,Kobe New Transit,Port Island Line,5 February 1981,1981-02-05
+GoA4,Japan,Kobe New Transit,Rokkō Island Line,21 February 1990,1990-02-21
+GoA4,Japan,Linimo,,6 March 2005,2005-03-06
+GoA4,Japan,Osaka Metro,Nanko Port Town Line,20 October 1991,1991-10-20
+GoA4,Japan,Skyrail Midorizaka Line,,28 August 1998,1998-08-28
+GoA4,Japan,Tokyo Metropolitan Bureau of Transportation,Nippori-Toneri Liner,30 March 2008,2008-03-30
+GoA4,Japan,Wing Shuttle,,4 September 1994,1994-09-04
+GoA4,Japan,Yurikamome,,1 November 1995,1995-11-01
+GoA4,Macau,Macau Light Rapid Transit,Taipa Line,10 December 2019,2019-12-10
+GoA4,Macau,Macau Light Rapid Transit,Hengqin Line,2 December 2024,2024-12-02
+GoA4,Macau,Macau Light Rapid Transit,Seac Pai Van Line,1 November 2024,2024-11-01
+GoA4,Malaysia,KLIA Aerotrain,,1998,1998
+GoA4,Malaysia,Rapid KL,Kelana Jaya Line,1 September 1998,1998-09-01
+GoA4,Malaysia,Rapid KL,Kajang Line,16 December 2016,2016-12-16
+GoA4,Malaysia,Rapid KL,Ampang Line,2017,2017
+GoA4,Malaysia,Rapid KL,Sri Petaling Line,2017,2017
+GoA4,Malaysia,Rapid KL,Putrajaya Line,16 June 2022,2022-06-16
+GoA4,Malaysia,Rapid KL,Shah Alam Line,29 June 2026,2026-06-29
+GoA4,Malaysia,Melaka Monorail,,4 December 2017,2017-12-04
+GoA4,Kazakhstan,Astana Light Metro,Line 1,16 May 2026,2026-05-16
+GoA4,Pakistan,Lahore Metro,Orange Line,25 October 2020,2020-10-25
+GoA4,Qatar,Doha Metro,Red Line,8 May 2019,2019-05-08
+GoA4,Qatar,Doha Metro,Green Line,10 December 2019,2019-12-10
+GoA4,Qatar,Doha Metro,Gold Line,21 November 2019,2019-11-21
+GoA4,Qatar,Hamad International Airport Shuttle,,2014,2014
+GoA4,Saudi Arabia,Princess Nora bint Abdul Rahman University Automated People Mover,,2012,2012
+GoA4,Saudi Arabia,Riyadh Metro,Line 1,1 December 2024,2024-12-01
+GoA4,Saudi Arabia,Riyadh Metro,Line 2,15 December 2024,2024-12-15
+GoA4,Saudi Arabia,Riyadh Metro,Line 3,5 January 2025,2025-01-05
+GoA4,Saudi Arabia,Riyadh Metro,Line 4,1 December 2024,2024-12-01
+GoA4,Saudi Arabia,Riyadh Metro,Line 5,15 December 2024,2024-12-15
+GoA4,Saudi Arabia,Riyadh Metro,Line 6,1 December 2024,2024-12-01
+GoA4,Singapore,Changi Airport Skytrain,,1990,1990
+GoA4,Singapore,Light Rail Transit (Singapore),Bukit Panjang LRT line,6 November 1999,1999-11-06
+GoA4,Singapore,Light Rail Transit (Singapore),Sengkang LRT line,18 January 2003,2003-01-18
+GoA4,Singapore,Light Rail Transit (Singapore),Punggol LRT line,29 January 2005,2005-01-29
+GoA4,Singapore,Mass Rapid Transit (Singapore),North East MRT line,20 June 2003,2003-06-20
+GoA4,Singapore,Mass Rapid Transit (Singapore),Circle MRT line,28 May 2009,2009-05-28
+GoA4,Singapore,Mass Rapid Transit (Singapore),Downtown MRT line,22 December 2013,2013-12-22
+GoA4,Singapore,Mass Rapid Transit (Singapore),North–South MRT line,2017,2017
+GoA4,Singapore,Mass Rapid Transit (Singapore),East–West MRT line,18 June 2017 (Tuas West extension) 28 May 2018 (whole line),2017-06-18
+GoA4,Singapore,Mass Rapid Transit (Singapore),Thomson–East Coast MRT line,31 January 2020,2020-01-31
+GoA4,South Korea,Busan-Gimhae Light Rail Transit,,9 September 2011,2011-09-09
+GoA4,South Korea,Busan Metro,Line 4,30 March 2011,2011-03-30
+GoA4,South Korea,Daegu Metro,Line 3,23 April 2015,2015-04-23
+GoA4,South Korea,Incheon Airport Maglev,,3 February 2016,2016-02-03
+GoA4,South Korea,Incheon Airport Shuttle train,,20 June 2008,2008-06-20
+GoA4,South Korea,Incheon Subway,Line 2,30 July 2016,2016-07-30
+GoA4,South Korea,Seoul Light Rapid Transit,U Line,1 July 2012,2012-07-01
+GoA4,South Korea,Seoul Light Rapid Transit,Everline,26 April 2013,2013-04-26
+GoA4,South Korea,Seoul Light Rapid Transit,Ui LRT,2 September 2017,2017-09-02
+GoA4,South Korea,Seoul Light Rapid Transit,Gimpo Goldline,28 September 2019,2019-09-28
+GoA4,South Korea,Seoul Light Rapid Transit,Sillim Line,28 May 2022,2022-05-28
+GoA4,South Korea,Seoul Metropolitan Subway,Shinbundang Line,28 October 2011,2011-10-28
+GoA4,South Korea,Wolmi Sea Train,,8 October 2019,2019-10-08
+GoA4,Taiwan,Taichung MRT,Green line,25 April 2021,2021-04-25
+GoA4,Taiwan,Taipei Metro,Wenhu line,28 March 1996,1996-03-28
+GoA4,Taiwan,New Taipei Metro,Circular line,31 January 2020,2020-01-31
+GoA4,Taiwan,New Taipei Metro,Sanying line,30 June 2026,2026-06-30
+GoA4,Taiwan,Taoyuan International Airport Skytrain,,18 January 2003,2003-01-18
+GoA4,Thailand,BTS Skytrain,Gold Line,16 December 2020,2020-12-16
+GoA4,Thailand,MRT (Bangkok),Yellow Line,3 June 2023,2023-06-03
+GoA4,Thailand,MRT (Bangkok),Pink Line,21 November 2023,2023-11-21
+GoA4,Turkey,Istanbul Metro,Line M5,15 September 2017,2017-09-15
+GoA4,Turkey,Istanbul Metro,Line M7,28 November 2020,2020-11-28
+GoA4,Turkey,Istanbul Metro,Line M8,6 January 2023,2023-01-06
+GoA4,United Arab Emirates,Dubai International Airport Automated People Mover,Terminal 1 APM,2016,2016
+GoA4,United Arab Emirates,Dubai International Airport Automated People Mover,Terminal 3 APM,January 2013,2013-01
+GoA4,United Arab Emirates,Dubai Metro,Red Line,9 September 2009,2009-09-09
+GoA4,United Arab Emirates,Dubai Metro,Green Line,9 September 2011,2011-09-09
+GoA4,United Arab Emirates,Palm Jumeirah Monorail,,30 April 2009,2009-04-30
+GoA4,Denmark,Copenhagen Metro,Line M1,19 October 2002,2002-10-19
+GoA4,Denmark,Copenhagen Metro,Line M2,19 October 2002,2002-10-19
+GoA4,Denmark,Copenhagen Metro,Line M3,29 September 2019,2019-09-29
+GoA4,Denmark,Copenhagen Metro,Line M4,28 March 2020,2020-03-28
+GoA4,France,CDGVAL,Line 1,3 April 2007,2007-04-03
+GoA4,France,CDGVAL,Line 2,27 June 2007,2007-06-27
+GoA4,France,Lille Metro,Line 1,25 April 1983,1983-04-25
+GoA4,France,Lille Metro,Line 2,1 April 1989,1989-04-01
+GoA4,France,Lyon Metro,Line B,25 June 2022,2022-06-25
+GoA4,France,Lyon Metro,Line D,11 December 1992,1992-12-11
+GoA4,France,Orlyval,,2 October 1991,1991-10-02
+GoA4,France,Paris Metro,Line 1,3 November 2011,2011-11-03
+GoA4,France,Paris Metro,Line 4,12 September 2022,2022-09-12
+GoA4,France,Paris Metro,Line 14,15 October 1998,1998-10-15
+GoA4,France,Rennes Metro,Line A,15 March 2002,2002-03-15
+GoA4,France,Rennes Metro,Line B,20 September 2022,2022-09-20
+GoA4,France,Toulouse Metro,Line A,26 June 1993,1993-06-26
+GoA4,France,Toulouse Metro,Line B,30 June 2007,2007-06-30
+GoA4,Germany,Dortmund H-Bahn,,2 May 1984,1984-05-02
+GoA4,Germany,Düsseldorf Airport SkyTrain,,1 July 2002,2002-07-01
+GoA4,Germany,Munich Airport Satellite Terminal Shuttle Train,,2016,2016
+GoA4,Germany,Nuremberg U-Bahn,Line U2,2 January 2010,2010-01-02
+GoA4,Germany,Nuremberg U-Bahn,Line U3,14 June 2008,2008-06-14
+GoA4,Germany,SkyLine,,1994,1994
+GoA4,Greece,Thessaloniki Metro,Line 1,30 November 2024,2024-11-30
+GoA4,Greece,Thessaloniki Metro,Line 2,27 August 2026,2026-08-27
+GoA4,Hungary,Budapest Metro,Line 4,28 March 2014,2014-03-28
+GoA4,Italy,Brescia Metro,,2 March 2013,2013-03-02
+GoA4,Italy,Marconi Express,,18 November 2020,2020-11-18
+GoA4,Italy,Milan Metro,Line 4,26 November 2022,2022-11-26
+GoA4,Italy,Milan Metro,Line 5,10 February 2013,2013-02-10
+GoA4,Italy,Pisa Mover,,2017,2017
+GoA4,Italy,Rome Metro,Line C,9 November 2014,2014-11-09
+GoA4,Italy,SkyBridge,,1999,1999
+GoA4,Italy,Turin Metro,Line M1,4 February 2006,2006-02-04
+GoA4,Italy,Venice People Mover,,19 April 2010,2010-04-19
+GoA4,Russia,Automated Passenger Transportation System,,June 2018,2018-06
+GoA4,Spain,Barcelona Metro,Line 9,13 December 2009,2009-12-13
+GoA4,Spain,Barcelona Metro,Line 10,10 April 2010,2010-04-10
+GoA4,Spain,Madrid Barajas Airport People Mover,,December 2005,2005-12
+GoA4,Switzerland,Lausanne Metro,Line M2,27 October 2008,2008-10-27
+GoA4,Switzerland,Skymetro,,September 2003,2003-09
+GoA4,Turkey,Istanbul Metro,Line M7,28 October 2020,2020-10-28
+GoA4,Turkey,Istanbul Metro,Line M11,22 January 2023,2023-01-22
+GoA4,United Kingdom,AirRail Link,,7 March 2003,2003-03-07
+GoA4,United Kingdom,Gatwick Airport Shuttle Transit,,1987,1987
+GoA4,United Kingdom,Heathrow Terminal 5 Transit,,2008,2008
+GoA4,United Kingdom,Stansted Airport Transit System,,1991,1991
+GoA4,United Kingdom,Luton DART,,10 March 2023,2023-03-10
+GoA4,Australia,Rio Tinto,Hamersley & Robe River,28 December 2018,2018-12-28
+GoA4,Australia,Sydney Metro,North West & Bankstown,26 May 2019,2019-05-26
