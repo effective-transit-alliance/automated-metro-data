@@ -12,7 +12,8 @@ import hashlib
 import html
 import re
 import sys
-from datetime import date, datetime
+from datetime import datetime
+from pathlib import Path
 
 from bs4 import BeautifulSoup
 
@@ -102,11 +103,13 @@ def parse(path):
 
 def main():
     out, *pages = sys.argv[1:]
-    today = date.today().isoformat()
+    # Leave out openings announced for after the pages were downloaded,
+    # so re-parsing the same pages always gives the same events.
+    downloaded = (Path(pages[0]).parent / "downloaded.txt").read_text().strip()
     rows = {}
     for page in pages:
         for r in parse(page):
-            if r["date"] > today:
+            if r["date"] > downloaded:
                 continue
             key = (r["date"], r["city"], re.sub(r"\W", "", r["description"]).lower())
             # Pages overlap at year boundaries; keep a flagged copy if any.

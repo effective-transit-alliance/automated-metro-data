@@ -21,6 +21,8 @@ main() {
     done
     # The current year lives on the main news page.
     curl -fsSL -o "${out}/news${last_year}.htm" "https://www.urbanrail.net/news.htm"
+    # For scripts/parse_urbanrail.py, to leave out openings announced for later.
+    date +%F > "${out}/downloaded.txt"
 }
 
 main "$@"
