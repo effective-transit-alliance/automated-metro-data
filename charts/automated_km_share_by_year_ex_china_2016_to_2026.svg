@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 436" width="760" height="436" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, DejaVu Sans, sans-serif">
 <title id="t">Share of new metro lines outside mainland China that are automated (&gt; GoA2), by year</title>
-<desc id="d">1422/3190 new grade-separated, non-mainline urban rail lines opened in 2016 to 2026-10-11 are automated.</desc>
+<desc id="d">1437/3190 new grade-separated, non-mainline urban rail lines opened in 2016 to 2026-10-11 are automated.</desc>
 <style>
 .bg{fill:#fcfcfb}.bar{fill:#2a78d6}.bar.partial{fill-opacity:.55}
 .grid{stroke:#e4e3df;stroke-width:1}.axis{stroke:#a3a29c;stroke-width:1}
@@ -11,7 +11,7 @@
 </style>
 <rect class="bg" width="760" height="436" rx="8"/>
 <text class="t1" x="56" y="28" font-size="17" font-weight="600">Automated share of new metro km, outside mainland China</text>
-<text class="t2" x="56" y="50" font-size="13">&gt; GoA2; grade-separated, non-mainline openings; 1422/3190 km (45%) in 2016 to 2026</text>
+<text class="t2" x="56" y="50" font-size="13">&gt; GoA2; grade-separated, non-mainline openings; 1437/3190 km (45%) in 2016 to 2026</text>
 <line class="axis" x1="56" x2="744" y1="356.0" y2="356.0"/>
 <text class="t2" x="48" y="360.0" font-size="12" text-anchor="end">0%</text>
 <line class="grid" x1="56" x2="744" y1="285.0" y2="285.0"/>
@@ -90,13 +90,13 @@
 </g>
 <text class="t1" x="650.2" y="374.0" font-size="12" text-anchor="middle">2025</text>
 <text class="t2" x="650.2" y="390.0" font-size="11" text-anchor="middle">138/205</text>
-<g><title>2026: 197/260 new km automated (76%), through 2026-10-11</title>
+<g><title>2026: 211/260 new km automated (81%), through 2026-10-11</title>
 <rect x="681.5" y="72" width="62.5" height="284" fill="transparent"/>
-<path class="bar partial" d="M690.8,356.0 V145.6 Q690.8,141.6 694.8,141.6 H730.6 Q734.6,141.6 734.6,145.6 V356.0 Z"/>
-<text class="t1" x="712.7" y="135.6" font-size="12" text-anchor="middle">76%</text>
+<path class="bar partial" d="M690.8,356.0 V129.6 Q690.8,125.6 694.8,125.6 H730.6 Q734.6,125.6 734.6,129.6 V356.0 Z"/>
+<text class="t1" x="712.7" y="119.6" font-size="12" text-anchor="middle">81%</text>
 </g>
 <text class="t1" x="712.7" y="374.0" font-size="12" text-anchor="middle">2026*</text>
-<text class="t2" x="712.7" y="390.0" font-size="11" text-anchor="middle">197/260</text>
+<text class="t2" x="712.7" y="390.0" font-size="11" text-anchor="middle">211/260</text>
 <text class="t2" x="56" y="412" font-size="11">Below each year: automated/new km. New lines and extensions; 63 openings of unknown length left out.</text>
 <text class="t2" x="56" y="426" font-size="11">* 2026 through 2026-10-11. Sources: UrbanRail.net, CAMET.</text>
 </svg>
