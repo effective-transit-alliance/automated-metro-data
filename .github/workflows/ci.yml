@@ -87,16 +87,18 @@ jobs:
 
       # Upstream changes don't fail CI, since they aren't caused by the change being tested,
       # but they're flagged so they can be downloaded and reviewed.
-      - name: check for new or edited UrbanRail.net events
+      # Parsing onto a copy of the committed events matches them up,
+      # so entries UrbanRail.net only rewrote aren't flagged.
+      - name: check for new or removed UrbanRail.net events
         run: |
           if [[ ! -s .cache/urbanrail/downloaded.txt ]]; then
             echo "::warning::no UrbanRail.net pages to compare against"
             exit
           fi
-          uv run python scripts/parse_urbanrail.py .cache/urbanrail_events.csv .cache/urbanrail/*.htm
-          if diff data/urbanrail_events.csv .cache/urbanrail_events.csv; then
-            echo "the committed UrbanRail.net pages are up to date"
-          else
-            changed=$(diff data/urbanrail_events.csv .cache/urbanrail_events.csv | grep -c '^[<>]')
-            echo "::warning::UrbanRail.net has $changed new or edited event lines; rerun \`download_urbanrail.sh\` and review them"
+          cp data/urbanrail_events.csv .cache/urbanrail_events.csv
+          uv run python scripts/parse_urbanrail.py .cache/urbanrail_events.csv .cache/urbanrail/*.htm \
+            2> .cache/urbanrail_changes.txt
+          cat .cache/urbanrail_changes.txt
+          if changed=$(grep -c -E '^(new|gone): ' .cache/urbanrail_changes.txt); then
+            echo "::warning::UrbanRail.net has $changed new or removed events; rerun \`download_urbanrail.sh\` and review them"
           fi
