@@ -33,6 +33,9 @@ jobs:
       - name: shellcheck
         run: uv run shellcheck scripts/*.sh
 
+      - name: actionlint
+        run: uv run actionlint
+
       # The CAMET reports are about 30 MB and their servers are slow,
       # so only download them when the cache doesn't have this set of them.
       - uses: actions/cache@v6.1.0

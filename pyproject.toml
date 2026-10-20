@@ -34,6 +34,7 @@ unsupported-dynamic-base = "warn"
 
 [dependency-groups]
 dev = [
+    "actionlint-py>=1.7.12.25",
     "pre-commit>=4.7.0",
     "pyrefly>=1.4.0",
     "ruff>=0.17.1",

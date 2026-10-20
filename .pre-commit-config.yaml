@@ -30,3 +30,8 @@ repos:
         entry: uv run shellcheck
         language: system
         types: [shell]
+      - id: actionlint
+        name: actionlint
+        entry: uv run actionlint
+        language: system
+        files: ^\.github/workflows/
