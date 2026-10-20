@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   pull_request:
+  # So the UrbanRail.net refresh can run CI on the PRs it opens,
+  # whose own events don't start workflows without approval.
+  workflow_dispatch:
 
 jobs:
   check:

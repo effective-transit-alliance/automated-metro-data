@@ -243,6 +243,14 @@ and warns if they have events that are new or gone since the committed ones.
 It also runs `ruff`, `ty`, `pyrefly`, `shellcheck`, and `actionlint`,
 which `uv run pre-commit install` sets up to run before each commit, too.
 
+Every Monday, a workflow downloads both sources again, rebuilds everything,
+and opens a pull request from the `refresh-data` branch if anything changed,
+unless the last one is still open.
+Its description lists the new and removed openings, GoA changes, the headline numbers before and after,
+and the changes to the chart data,
+from [`scripts/summarize_changes.py`](scripts/summarize_changes.py),
+so new openings can be reviewed and overridden in `data/curation/` before merging.
+
 ## License
 
 The code in [`scripts/`](scripts/) is under the [MIT License](LICENSE).

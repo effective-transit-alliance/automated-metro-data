@@ -1,0 +1,107 @@
+name: Refresh
+
+# Download UrbanRail.net's openings and Wikipedia's list of driverless systems each week,
+# rebuild everything from them, and open a pull request if anything changed,
+# listing the new openings and GoA changes for review.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+
+concurrency: refresh
+
+env:
+  BRANCH: refresh-data
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - uses: astral-sh/setup-uv@v10.3.0
+        with:
+          enable-cache: true
+
+      # Don't rebuild over a pull request still under review,
+      # since it may have curation commits pushed to it.
+      - name: check for an open pull request
+        id: open
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [[ "$(gh pr list --head "$BRANCH" --state open --json number --jq length)" != 0 ]]; then
+            echo "::notice::the refresh pull request from $BRANCH is still open; merge or close it first"
+            echo "open=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: download
+        if: steps.open.outputs.open != 'true'
+        run: |
+          ./scripts/download_urbanrail.sh
+          ./scripts/download_wikipedia.sh
+
+      - name: rebuild
+        if: steps.open.outputs.open != 'true'
+        run: |
+          cp data/urban_rail_openings.csv "$RUNNER_TEMP/old_openings.csv"
+          uv run python scripts/parse_urbanrail.py data/urbanrail_events.csv data/raw/urbanrail/*.htm \
+            2> "$RUNNER_TEMP/urbanrail_changes.txt"
+          uv run python scripts/parse_wikipedia.py data/wikipedia_driverless.csv \
+            data/raw/wikipedia/list_of_driverless_train_systems.html
+          uv run python scripts/build_openings.py
+          uv run python scripts/plot_share.py
+
+      # Changes only to the downloaded pages, such as their download date
+      # or the timestamps MediaWiki renders into its HTML, aren't worth a pull request,
+      # since the committed pages still give the same parsed data.
+      - name: check for changes
+        if: steps.open.outputs.open != 'true'
+        id: changes
+        run: |
+          git status --short
+          if [[ -n "$(git status --porcelain -- . ':!data/raw')" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: open the pull request
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "Automated weekly refresh of UrbanRail.net's openings and Wikipedia's list of driverless systems."
+            echo
+            echo "New openings get their mode's default GoA, or Wikipedia's;"
+            echo "check them and add overrides in \`data/curation/\` where needed."
+            echo
+            uv run python scripts/summarize_changes.py "$RUNNER_TEMP/old_openings.csv" data/urban_rail_openings.csv
+            echo
+            echo "## UrbanRail.net events"
+            echo
+            echo '```'
+            cat "$RUNNER_TEMP/urbanrail_changes.txt"
+            echo '```'
+            echo
+            echo "## Chart data"
+            echo
+            echo '```diff'
+            git diff -U0 -- 'data/automated*_share_by_year*.csv'
+            echo '```'
+          } > "$RUNNER_TEMP/body.md"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C "$BRANCH"
+          git add -A
+          git commit -q -m "Refresh UrbanRail.net and Wikipedia data"
+          git push -f origin "$BRANCH"
+          gh pr create --head "$BRANCH" --title "Refresh UrbanRail.net and Wikipedia data" \
+            --body-file "$RUNNER_TEMP/body.md"
+          # Pushes and pull requests made with this workflow's token don't start workflows,
+          # so start CI on the branch directly.
+          gh workflow run ci.yml --ref "$BRANCH"
