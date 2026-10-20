@@ -9,9 +9,9 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
 
-      - uses: astral-sh/setup-uv@v10.0.1
+      - uses: astral-sh/setup-uv@v10.3.0
         with:
           enable-cache: true
 
@@ -35,7 +35,7 @@ jobs:
 
       # The CAMET reports are about 30 MB and their servers are slow,
       # so only download them when the cache doesn't have this set of them.
-      - uses: actions/cache@v6
+      - uses: actions/cache@v6.1.0
         with:
           path: data/raw/camet
           key: camet-${{ hashFiles('data/camet_sha256sums.txt') }}
