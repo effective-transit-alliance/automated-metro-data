@@ -12,6 +12,7 @@ whose characters leak into cells, so those are stripped.
 import csv
 import re
 import sys
+from collections.abc import Iterator
 
 import pdfplumber
 
@@ -19,26 +20,26 @@ WATERMARK = set("中国城市轨道交通协会")
 HEADER = ["序号", "城市", "线路名称"]
 
 
-def clean(cell, numeric=False):
+def clean(cell: str | None, numeric: bool = False) -> str:
     cell = (cell or "").replace("\n", "")
     if numeric:
         return re.sub(r"[^\d.*]", "", cell)
     return cell.strip()
 
 
-def clean_name(cell):
+def clean_name(cell: str | None) -> str:
     # Watermark characters only leak in as whole stray characters
     # on their own line, so drop lines made up entirely of them.
     lines = (cell or "").split("\n")
     return "".join(line for line in lines if not (line and set(line) <= WATERMARK)).strip()
 
 
-def clean_mode(cell):
+def clean_mode(cell: str | None) -> str:
     lines = [line for line in (cell or "").split("\n") if line.strip()]
     return lines[-1].strip() if lines else ""
 
 
-def rows(path):
+def rows(path: str) -> Iterator[dict[str, str | int]]:
     with pdfplumber.open(path) as pdf:
         for page in pdf.pages:
             for table in page.extract_tables():
@@ -63,7 +64,7 @@ def rows(path):
                     }
 
 
-def main():
+def main() -> None:
     out, *reports = sys.argv[1:]
     all_rows = [r for path in reports for r in rows(path)]
     with open(out, "w", newline="") as f:

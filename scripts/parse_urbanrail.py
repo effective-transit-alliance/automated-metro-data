@@ -12,6 +12,7 @@ import hashlib
 import html
 import re
 import sys
+from collections.abc import Iterator
 from datetime import datetime
 from pathlib import Path
 
@@ -32,9 +33,9 @@ MARK = "\x00"
 SEG_RE = re.compile(r"(.+?\(\s*~?[\d.,]+\s*km[^)]*\))\s*(NEW\s+[A-Z]+!)?\s*", re.S)
 
 
-def segments(desc):
+def segments(desc: str) -> list[tuple[str, str]]:
     """Split an entry that lists several lines (each with its own length)."""
-    out = []
+    out: list[tuple[str, str]] = []
     pos = 0
     for m in SEG_RE.finditer(desc):
         seg = re.sub(r"^[\s;,&+|\-\u2013]+", "", m.group(1)).strip()
@@ -51,14 +52,14 @@ def segments(desc):
     return out
 
 
-def parse(path):
+def parse(path: str) -> Iterator[dict[str, str]]:
     page_year = re.findall(r"\d{4}", path)[-1]
     raw = Path(path).read_bytes().decode("cp1252", errors="replace")
     soup = BeautifulSoup(raw, "html.parser")
     # The HTML nests <p> tags unpredictably, so work on flat text instead,
     # with each mode icon turned into a marker that starts a new entry.
     for img in soup.find_all("img", src=re.compile("minilogo")):
-        img.replace_with(f"{MARK}{img['src'].split('-minilogo')[0]}{MARK}")
+        img.replace_with(f"{MARK}{str(img['src']).split('-minilogo')[0]}{MARK}")
     for a in soup.find_all("a", href=re.compile(r"^[a-z]{2}/[a-z]{2}/.*\.htm")):
         a.replace_with(f"{a.get_text(' ')}{MARK}{a['href']}{MARK}")
     text = re.sub(r"\s+", " ", html.unescape(soup.get_text(" ")))
@@ -101,25 +102,25 @@ def parse(path):
             }
 
 
-def main():
+def main() -> None:
     out, *pages = sys.argv[1:]
     # Leave out openings announced for after the pages were downloaded,
     # so re-parsing the same pages always gives the same events.
     downloaded = (Path(pages[0]).parent / "downloaded.txt").read_text().strip()
-    rows = {}
+    by_key: dict[tuple[str, str, str], dict[str, str]] = {}
     for page in pages:
         for r in parse(page):
             if r["date"] > downloaded:
                 continue
             key = (r["date"], r["city"], re.sub(r"\W", "", r["description"]).lower())
             # Pages overlap at year boundaries; keep a flagged copy if any.
-            if key not in rows or (r["new_flag"] and not rows[key]["new_flag"]):
-                rows[key] = r
-    rows = sorted(rows.values(), key=lambda r: (r["date"], r["city"]))
+            if key not in by_key or (r["new_flag"] and not by_key[key]["new_flag"]):
+                by_key[key] = r
+    rows = sorted(by_key.values(), key=lambda r: (r["date"], r["city"]))
     for r in rows:
         # A stable ID for hand-kept overrides to refer to.
-        key = f"{r['date']}|{r['city']}|{r['description']}".encode()
-        r["id"] = hashlib.sha1(key).hexdigest()[:8]
+        id_key = f"{r['date']}|{r['city']}|{r['description']}".encode()
+        r["id"] = hashlib.sha1(id_key).hexdigest()[:8]
     with open(out, "w", newline="") as f:
         fields = ["id"] + [k for k in rows[0] if k != "id"]
         w = csv.DictWriter(f, fieldnames=fields)

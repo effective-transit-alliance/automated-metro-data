@@ -19,7 +19,8 @@ A line counts if it is new-build, fully grade-separated, and not mainline.
 """
 
 import csv
-from collections import Counter
+from collections import defaultdict
+from collections.abc import Callable
 from html import escape
 from pathlib import Path
 
@@ -30,11 +31,14 @@ OPENINGS = ROOT / "data" / "urban_rail_openings.csv"
 
 # File-name suffix: (description for the chart, which countries count).
 # Hong Kong and Macau are outside CAMET's statistics, so they count as outside China.
-REGIONS = {
+REGIONS: dict[str, tuple[str, Callable[[str], bool]]] = {
     "": ("worldwide", lambda country: True),
     "_china": ("in mainland China", lambda country: country == "China"),
     "_ex_china": ("outside mainland China", lambda country: country != "China"),
 }
+
+# Year, new lines or km, and automated lines or km.
+Row = tuple[str, float, float]
 
 # Layout, in px.
 WIDTH = 760
@@ -46,7 +50,7 @@ BOTTOM = 80
 BAR_GAP = 0.3
 
 
-def counted(r, by_km):
+def counted(r: dict[str, str], by_km: bool) -> bool:
     """Whether an opening counts: new lines by count, or any new km by length.
 
     Counting by km includes extensions, which take their line's GoA,
@@ -59,9 +63,11 @@ def counted(r, by_km):
     return r["new_build"] == "yes"
 
 
-def tally(in_region, last_year, by_km):
-    total = Counter()
-    automated = Counter()
+def tally(
+    in_region: Callable[[str], bool], last_year: str, by_km: bool
+) -> tuple[list[Row], str, int]:
+    total: defaultdict[str, float] = defaultdict(float)
+    automated: defaultdict[str, float] = defaultdict(float)
     unknown_km = 0
     last_date = ""
     with open(OPENINGS, newline="") as f:
@@ -82,12 +88,12 @@ def tally(in_region, last_year, by_km):
     return [(y, total[y], automated[y]) for y in years], last_date, unknown_km
 
 
-def latest_opening():
+def latest_opening() -> str:
     with open(OPENINGS, newline="") as f:
         return max(r["opening_date"] for r in csv.DictReader(f))
 
 
-def write_table(rows, table, unit):
+def write_table(rows: list[Row], table: Path, unit: str) -> None:
     with open(table, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["year", f"new_{unit}", f"automated_{unit}", "automated_share"])
@@ -95,12 +101,12 @@ def write_table(rows, table, unit):
             w.writerow([year, fmt(n), fmt(a), f"{a / n:.3f}"])
 
 
-def fmt(x):
+def fmt(x: float) -> str:
     """Format a line count or a length in km."""
     return f"{x:.0f}" if x == int(x) or x >= 10 else f"{x:.1f}"
 
 
-def bar_path(x, y, w, h, r):
+def bar_path(x: float, y: float, w: float, h: float, r: float) -> str:
     """A bar with rounded top corners, square at the baseline."""
     r = min(r, w / 2, h)
     return (
@@ -109,7 +115,9 @@ def bar_path(x, y, w, h, r):
     )
 
 
-def write_svg(rows, last_date, svg, region, unit, unknown_km):
+def write_svg(
+    rows: list[Row], last_date: str, svg: Path, region: str, unit: str, unknown_km: int
+) -> None:
     plot_w = WIDTH - LEFT - RIGHT
     plot_h = HEIGHT - TOP - BOTTOM
     step = plot_w / len(rows)
@@ -121,7 +129,7 @@ def write_svg(rows, last_date, svg, region, unit, unknown_km):
     # Only the year of the latest opening of any kind can be incomplete.
     partial_year = latest_opening()[:4]
 
-    def y_of(share):
+    def y_of(share: float) -> float:
         return TOP + plot_h * (1 - share)
 
     if unit == "km":
@@ -210,13 +218,13 @@ def write_svg(rows, last_date, svg, region, unit, unknown_km):
     svg.write_text("\n".join(out) + "\n")
 
 
-def write_png(svg):
+def write_png(svg: Path) -> None:
     png = svg.with_suffix(".png")
     # Twice the SVG's size, so it stays sharp on high-DPI screens.
-    png.write_bytes(bytes(resvg_py.svg_to_bytes(svg_path=str(svg), zoom=2)))
+    png.write_bytes(resvg_py.svg_to_bytes(svg_path=str(svg), zoom=2))
 
 
-def main():
+def main() -> None:
     for last_year in ("2025", "2026"):
         span = f"2016_to_{last_year}"
         for suffix, (region, in_region) in REGIONS.items():

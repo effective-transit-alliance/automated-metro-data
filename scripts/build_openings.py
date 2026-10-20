@@ -59,12 +59,12 @@ FIELDS = [
 ]
 
 
-def read(name):
+def read(name: str) -> list[dict[str, str]]:
     with open(CURATION / name, newline="") as f:
         return list(csv.DictReader(f))
 
 
-def main():
+def main() -> None:
     cities = {}
     for r in read("cities.csv"):
         cities[r["city"]] = r["country"]
@@ -146,7 +146,7 @@ def main():
     print(f"wrote {len(unknown)} rows to {UNKNOWN_LENGTH.relative_to(ROOT)}")
 
 
-def write(path, rows):
+def write(path: Path, rows: list[dict[str, str]]) -> None:
     with open(path, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
