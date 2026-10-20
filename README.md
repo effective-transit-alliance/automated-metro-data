@@ -111,7 +111,7 @@ in which 121 of 340 new lines (36%) are automated worldwide.
 Every chart also has a km version (`automated_km_share_*`),
 counting the km of every grade-separated, non-mainline opening,
 new lines and extensions alike, each extension taking its line's GoA:
-3,378 of 11,583 km (29%) opened in 2016–2026 are automated worldwide,
+3,385 of 11,583 km (29%) opened in 2016–2026 are automated worldwide,
 23% in mainland China and 45% elsewhere.
 The km share is lower than the line share because extensions,
 mostly of older lines built before automation was common, add many non-automated km.

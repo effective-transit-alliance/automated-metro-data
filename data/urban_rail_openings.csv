@@ -171,7 +171,7 @@ opening_date,country,city,line,mode,km,mainline,grade_separated,new_build,GoA,au
 2017-06-17,India,Kochi,Line 1,metro,13.0,no,yes,yes,GoA2,no,not in Wikipedia's list of GoA3/GoA4 systems; GoA1 vs. GoA2 unverified,https://en.wikipedia.org/wiki/List_of_driverless_train_systems,Line 1 Aluva – Palarivattom (13 km),,8bf224f3
 2017-06-17,Turkey,İzmit,Akçaray,tram,7.2,no,no,yes,GoA0,no,mode default; unverified,,Akçaray SekaPark - Otogar (7.2 km),,0de9e8b3
 2017-06-18,India,Bengaluru,Green Line,metro,10.5,no,yes,no,GoA2,no,"not in Wikipedia's list of GoA3/GoA4 systems; otherwise mode default, unverified",https://en.wikipedia.org/wiki/List_of_driverless_train_systems,Green Line Sampige Road - Yelachenahalli (10.5 km),,b49bbce0
-2017-06-18,Singapore,Singapore,East–West Line,metro,7.5,no,yes,no,GoA2,no,ATO with train captains,,EW Line Joo Koon - Tuas Link (7.5 km),,82f5a3c3
+2017-06-18,Singapore,Singapore,East–West Line,metro,7.5,no,yes,no,GoA3,yes,"GoA3: driverless CBTC operation since 2017, with automatic door closing and a train captain on board",https://landtransportguru.net/things-to-note-about-the-new-cbtc-signalling-system/,EW Line Joo Koon - Tuas Link (7.5 km),,82f5a3c3
 2017-06-27,China,Shijiazhuang,Line 1,metro,23.9,no,yes,yes,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 1 Xiwang - Xiaohedadao (23.9 km),,3347fd79
 2017-06-27,China,Shijiazhuang,Line 3,metro,6.4,no,yes,yes,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 3 Shierzhong - Shijiazhuang (6.4 km),,1c405187
 2017-06-30,China,Changchun,Line 1,metro,16.3,no,yes,yes,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 1 Beihuan - Hongzuzi (16.3 km),,d1e400f6
@@ -467,7 +467,7 @@ opening_date,country,city,line,mode,km,mainline,grade_separated,new_build,GoA,au
 2019-10-12,France,Paris,T1,tram,0.8,no,no,no,GoA0,no,mode default; unverified,,T1 Asnières Les Courtilles – Asnières Quatre Routes (0.8 km),,62c23340
 2019-10-19,France,Avignon,Avignon Tramway T1,tram,5.2,no,no,yes,GoA0,no,mode default; unverified,,T1 Saint Roch – Saint Chamand (5.2 km),,b4f8bb9d
 2019-10-26,Brazil,Rio de Janeiro,T3,tram,1.0,no,no,no,GoA0,no,mode default; unverified,,T3 Candelária - Cristiano Ottoni (1 km),,8326603d
-2019-11-02,Singapore,Singapore,North–South Line,metro,,no,yes,no,GoA2,no,ATO with train captains,,NSL Canberra station,in-fill station,9f042947
+2019-11-02,Singapore,Singapore,North–South Line,metro,,no,yes,no,GoA3,yes,"GoA3: driverless CBTC operation since 2017, with automatic door closing and a train captain on board",https://landtransportguru.net/things-to-note-about-the-new-cbtc-signalling-system/,NSL Canberra station,in-fill station,9f042947
 2019-11-06,China,Wuhan,Line 8,metro,4.8,no,yes,no,GoA2,no,CAMET: not FAO (inferred from its FAO tables and totals),https://www.camet.org.cn/xytj/tjxx/ (reports in data/raw/camet/),Line 8 Yezhi Lake - Military Athletes’ Village (4.8 km),,46dc18fb
 2019-11-13,France,Nice,Line 3,tram,3.8,no,no,no,GoA0,no,mode default; unverified,,Line 3 Digue des Français - Saint-Isidore (3.8 km),,60317a15
 2019-11-16,France,Saint-Étienne,T3,tram,4.2,no,no,no,GoA0,no,mode default; unverified,,T3 Châteauxcreux Gare - Roger Rocher (4.2 km),,d0b107d6

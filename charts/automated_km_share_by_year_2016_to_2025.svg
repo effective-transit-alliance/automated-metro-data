@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 436" width="760" height="436" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, Segoe UI, DejaVu Sans, sans-serif">
 <title id="t">Share of new metro lines worldwide that are automated (&gt; GoA2), by year</title>
-<desc id="d">3091/11050 new grade-separated, non-mainline urban rail lines opened in 2016 to 2025-12-29 are automated.</desc>
+<desc id="d">3099/11050 new grade-separated, non-mainline urban rail lines opened in 2016 to 2025-12-29 are automated.</desc>
 <style>
 .bg{fill:#fcfcfb}.bar{fill:#2a78d6}.bar.partial{fill-opacity:.55}
 .grid{stroke:#e4e3df;stroke-width:1}.axis{stroke:#a3a29c;stroke-width:1}
@@ -11,7 +11,7 @@
 </style>
 <rect class="bg" width="760" height="436" rx="8"/>
 <text class="t1" x="56" y="28" font-size="17" font-weight="600">Automated share of new metro km, worldwide</text>
-<text class="t2" x="56" y="50" font-size="13">&gt; GoA2; grade-separated, non-mainline openings; 3091/11050 km (28%) in 2016 to 2025</text>
+<text class="t2" x="56" y="50" font-size="13">&gt; GoA2; grade-separated, non-mainline openings; 3099/11050 km (28%) in 2016 to 2025</text>
 <line class="axis" x1="56" x2="744" y1="356.0" y2="356.0"/>
 <text class="t2" x="48" y="360.0" font-size="12" text-anchor="end">0%</text>
 <line class="grid" x1="56" x2="744" y1="285.0" y2="285.0"/>
@@ -27,13 +27,13 @@
 </g>
 <text class="t1" x="90.4" y="374.0" font-size="12" text-anchor="middle">2016</text>
 <text class="t2" x="90.4" y="390.0" font-size="11" text-anchor="middle">59/359</text>
-<g><title>2017: 115/1062 new km automated (11%)</title>
+<g><title>2017: 123/1062 new km automated (12%)</title>
 <rect x="124.8" y="72" width="68.8" height="284" fill="transparent"/>
-<path class="bar" d="M135.1,356.0 V329.1 Q135.1,325.1 139.1,325.1 H179.3 Q183.3,325.1 183.3,329.1 V356.0 Z"/>
-<text class="t1" x="159.2" y="319.1" font-size="12" text-anchor="middle">11%</text>
+<path class="bar" d="M135.1,356.0 V327.1 Q135.1,323.1 139.1,323.1 H179.3 Q183.3,323.1 183.3,327.1 V356.0 Z"/>
+<text class="t1" x="159.2" y="317.1" font-size="12" text-anchor="middle">12%</text>
 </g>
 <text class="t1" x="159.2" y="374.0" font-size="12" text-anchor="middle">2017</text>
-<text class="t2" x="159.2" y="390.0" font-size="11" text-anchor="middle">115/1062</text>
+<text class="t2" x="159.2" y="390.0" font-size="11" text-anchor="middle">123/1062</text>
 <g><title>2018: 96/869 new km automated (11%)</title>
 <rect x="193.6" y="72" width="68.8" height="284" fill="transparent"/>
 <path class="bar" d="M203.9,356.0 V328.8 Q203.9,324.8 207.9,324.8 H248.1 Q252.1,324.8 252.1,328.8 V356.0 Z"/>
